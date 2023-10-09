@@ -8,14 +8,14 @@
 }
 
 :root{
-    --bg-color: white;
-    --text-color: #045494;
+    --bg-color: whitesmoke;
+    --text-color: whitesmoke;
     --main-color: #35ad85;
-    --big-font: 7rem;
+    --big-font: 5rem;
     --p-font: 1.1rem;
 }
 
-header{
+.header{
     position: fixed;
     top: 0;
     right: 0;
@@ -25,10 +25,13 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 32px 15%;
-    background: transparent;
     transition: all ease .45s;
-
+    background-color: rgba(33, 33, 38, 0.5);
 }
+
+.active {
+    background-color: #24262b;
+  }
 
 .logo{
     color: var(--text-color);
@@ -90,6 +93,8 @@ section{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
+    background-image: url('images/bground.png');
+    background-size: cover;
 }
 
 .home-image{
@@ -111,7 +116,7 @@ section{
 .home-text p{
     font-size: var(--p-font);
     font-weight: 400;
-    color: #383838;
+    color: whitesmoke;
     line-height: 30px;
     mask-border: 50px;
     margin-bottom: 30px;
@@ -133,4 +138,52 @@ section{
     transform: translateY(-5px);
     background: var(--main-color);
     color: var(--text-color);
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+
+/*    flex-wrap: wrap; */
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+.footer-col a:hover{
+    color: #35ad85;
+    padding-left: 8px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
 }

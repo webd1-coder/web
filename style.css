@@ -61,7 +61,6 @@
 }
 
 .search-btn{
-    background: linear-gradient(130.08deg, whitesmoke 0%, #6fa2cd 100%);
     padding: 10px 20px;
     border-radius: 100px;
     display: flex;
@@ -93,8 +92,16 @@ section{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    background-image: url('images/bground.png');
+   /** background-image: url('images/bground.png'); **/
     background-size: cover;
+    animation: change-bg 20s steps(10, jump-none) forwards infinite;
+}
+
+@keyframes change-bg{
+    0%, 100% { background-image: url('images/bground.png');}
+    20% { background-image: url('images/bground2.png');}
+    40% { background-image: url('images/bground3.png');}
+    60% { background-image: url('images/bground4.png');}
 }
 
 .home-image{

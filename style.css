@@ -14,6 +14,7 @@
     --main-color: #35ad85;
     --big-font: 5rem;
     --p-font: 1.1rem;
+    --mid-font: 2.5rem;
 }
 
 .header{
@@ -104,16 +105,6 @@ section{
     60% { background-image: url('images/bground4.png');}
 }
 
-.home-image{
-    width: 730px;
-    height: 730px;
-}
-
-.home-image img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
 
 .home-text h1{
     font-size: var(--big-font);
@@ -121,7 +112,7 @@ section{
 }
 
 .home-text p{
-    font-size: var(--p-font);
+    font-size: var(--mid-font);
     font-weight: 400;
     color: whitesmoke;
     line-height: 30px;
@@ -241,6 +232,5 @@ font-size: 12px;
 
 .footer{
     background-color: #24262b;
-  /*  padding: 70px 0;*/
-  padding: 25px 15%;
+    padding: 25px 15%;
 }

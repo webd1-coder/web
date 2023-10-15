@@ -112,6 +112,7 @@ section{
 .home-text h1{
     font-size: var(--big-font);
     margin: 23px 0;
+    color: whitesmoke
 }
 
 .home-text p{

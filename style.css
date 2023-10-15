@@ -8,9 +8,9 @@
     text-decoration: none;
 }
 
-:root{
+:root {
     --bg-color: whitesmoke;
-    --text-color: whitesmoke;
+    --text-color: rgb(9, 0, 0);
     --main-color: #35ad85;
     --big-font: 5rem;
     --p-font: 1.1rem;
@@ -29,6 +29,7 @@
     padding: 10px 15%;
     transition: all ease .45s;
     background-color: rgba(33, 33, 38, 0.5);
+    --text-color: white;
 }
 
 .active {
@@ -80,6 +81,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
+    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
 }
 
 section{

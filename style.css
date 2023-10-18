@@ -33,7 +33,7 @@
 }
 
 .active {
-    background-color: #24262b;
+    background-color: #0c0c0c;
   }
 
 .logo{
@@ -124,7 +124,7 @@ section{
 }
 
 .envBtn button{
-    background-color: black;
+    background-color: rgb(6, 6, 6);
     box-shadow: none;
     box-sizing: border-box;
     color: white;

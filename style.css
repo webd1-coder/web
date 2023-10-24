@@ -33,7 +33,7 @@
 }
 
 .active {
-    background-color: #0c0c0c;
+    background-color: #24262b;
   }
 
 .logo{
@@ -124,7 +124,7 @@ section{
 }
 
 .envBtn button{
-    background-color: rgb(6, 6, 6);
+    background-color: black;
     box-shadow: none;
     box-sizing: border-box;
     color: white;
@@ -269,6 +269,19 @@ section{
 text-decoration: underline;
 color: black;
 font-size: 12px;
+}
+
+
+.column {
+    float: left;
+    width: 70%;
+    padding: 10px;
+}
+
+.sidecolumn:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 

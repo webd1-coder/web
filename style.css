@@ -313,13 +313,36 @@ font-size: 12px;
     overflow: hidden;
 }
 
+.sidecolumn h1, h2, h5, h6{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
 .column h4{
+    color: #524f4f;
+    font-size: 1.1rem;
+    margin: 0 0 10px 0;
+}
+
+.sidecolumn h4{
     color: #524f4f;
     font-size: 1.125rem;
     margin: 0 0 10px 0;
 }
 
+.sidecolumn {
+    margin-top: -50px;
+    padding-top: 10px;
+}
 .column p{
+    font-family: inherit;
+    font-size: .8125rem;
+    margin: 0 0 10px 0;
+    line-height: 20px;
+    color: #524f4f;
+}
+
+.sidecolumn p{
     font-family: inherit;
     font-size: .8125rem;
     margin: 0 0 10px 0;

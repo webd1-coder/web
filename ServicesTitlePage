@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.I.S., Inc. | Services</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,800&display=swap" rel="stylesheet">
+    
+    <!--Boxicons-->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+    <script type="text/javascript" src="script.js"></script>
+</head>
+
+<body>
+    <!--Header-->
+    <header class="header">
+        <img src="images/logo.png" alt="" width="85"/>
+
+        <ul class="navigationbar">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contracts</a></li>
+            <li><a href="careers.html">Careers</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Locations</a></li>
+        </ul>
+        <div class="search-btn">
+            <div class="bx bx-search" id="search-icon"></div>
+        </div>
+    </header>
+
+
+<!--Full Title Page-->
+    <body>
+        <div class = "maincolumn">
+            <div class="column">
+                <div class="section1">
+                    <div class="title">
+                        <h3>A.I.S Services</h3>
+                    </div>
+                <div class="section1content">
+                    <p><br></p>
+                    <p>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>Fisheries Monitoring Programs</strong>
+                        <br>
+                        <br>
+                        The National Oceanographic and Atmospheric Administration Fisheries Service funds a number of Fisheries Observer Programs on the East Coast, West Coast, Gulf of Mexico, Alaska and Hawaii, as part of its National Fisheries Observer Program.
+                        <br>
+                        <br>
+                        <a href="#">More about the National Fisheries Observer Program</a>
+                        <br>
+                        <br>
+                    </p>
+                    <hr>
+                    <p>
+                        <br>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>Protected Species Program</strong>
+                        <br>
+                        <br>
+                        AIS has been a leader in the field of protected species monitoring since incorporation.  We have over twenty-five years of experience monitoring protected species for population assessments as well as mitigation requirements during marine construction projects and seismic surveys.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <hr>
+                    <p>
+                        <br>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>Scientific Sampling</strong>
+                        <br>
+                        <br>
+                        Applying our marine experience to the environmental studies area, AIS offers our field sampling expertise to companies, agencies and organizations in need of experienced field biologists and technicians to implement their sampling and data collection programs.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <hr>
+                    <p>
+                        <br>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>Dredge Material Inspection</strong>
+                        <br>
+                        <br>
+                        AIS has provided U.S. Army Corps of Engineers (ACoE) certified Dredged Material Inspectors (DMI) for clients operating in the North and mid Atlantic regions of the United States since 1988. DMI services are often a permitting requirement during dredging and marine construction projects.
+                        <br>
+                        <br>
+                        <a href="#">About U.S. Army Corps of Engineers (ACoE)</a>
+                        <br>
+                        <br>
+                    </p>
+                    <hr>
+                    <p>
+                        <br>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>ProTech Fisheries Domain</strong>
+                        <br>
+                        <br>
+                        AIS has organized a ProTech Fisheries Domain Team comprised of eight companies, both large and small, with proven records of delivering high quality, performance based professional, scientific, and technical services to NOAA.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                    <hr>
+                    <p>
+                        <br>
+                        <img style="width: 450px; height: 170px; float: left;" src="images/placeholder.png" hspace="15">
+                        <strong>GSA Services</strong>
+                        <br>
+                        <br>
+                        AIS offers field sampling, data collection and data management expertise to government agencies in search of experienced biologists and data specialists. AIS biologists collect biological samples and record aquatic and oceanographic data in the harshest of environments.   Our personnel are located from Maine to North Carolina and Seattle, WA and Alaska and are available nationwide for day, night, weekend and holiday sampling schedules.
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                </div>

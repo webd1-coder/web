@@ -457,6 +457,11 @@ font-size: 12px;
 
 }
 
+.copyright{
+    color: white;
+    float :right;
+}
+
 .footer-col{
     width: 25%;
     padding: 0 15px;

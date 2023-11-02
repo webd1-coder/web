@@ -3,7 +3,8 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: normal 900 1em/1 "Font Awesome 6 Free";
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     list-style: none;
     text-decoration: none;
 }
@@ -188,6 +189,25 @@ section{
     z-index: 14 ;
 }
 
+.careershome{
+    position: relative;
+    width: 100%;
+    height:75vh; /*prev 100 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-size: cover;
+    background-image: url('images/bground4.png');
+}
+.careersmidbar{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
 .home{
     position: relative;
     width: 100%;
@@ -322,13 +342,33 @@ font-size: 12px;
 
 .column {
     float: left;
-    width: 70%;
+    width: 75%;
     padding: 10px;
     margin-left: 0;
     box-sizing: inherit;
     display: block;
     min-height: 1px;
 }
+
+
+
+.column ul{
+    font-size: .8125rem;
+    line-height: 1.0625rem;
+    margin: 1em 0;
+    padding-left: 2.5em;
+    box-sizing: inherit;
+}
+
+.column li{
+    line-height: 20px;
+    font-family: inherit;
+    font-size: .8125rem;
+    margin: 0 0 5px 0;
+    box-sizing: inherit;
+    list-style: inside;
+}
+
 
 /*careers section*/
 .column .title{
@@ -337,22 +377,74 @@ font-size: 12px;
     text-transform: uppercase;
     color: black;
     font-size: 1.375rem;
-    background-color: lightgray;
+    background-color: #e4e4e4;
     padding: 7px 10px;
-    font-family: sans-serif;
+    font-family: 'PT Sans', sans-serif;
+
 }
 
+.column .title h3 {
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+    font-size: 1.375rem;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+.sidecolumn .title h3{
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+    font-size: 1.375rem;
+    overflow: hidden;
+}
+
+.sidecolumn{
+    background-color: whitesmoke;
+}
+
+.column{
+    background-color: whitesmoke;
+}
+
+
+.maincolumn{
+    margin: 0 auto;
+    max-width: 1198px;
+    padding: 0;
+}
 .sidecolumn .title{
     line-height: 1.5rem;
     margin-bottom: 0;
     text-transform: uppercase;
     color: black;
-    font-size: 1.3rem;
-    background-color: lightgray;
+    font-size: 1.375rem;
+    background-color: #e4e4e4;
     padding: 7px 10px;
     font-family: sans-serif;
-    margin-left: 1330px;
+    box-sizing: inherit;
+    margin-top: 9px;
 }
+.sidecolumn{
+    position: relative;
+    overflow: auto;
+    margin-top: 1px !important;
+    float: left;
+    display: block;
+    box-sizing: inherit;
+    line-height: 1.4;
+}
+.sidecolumn .sidesection1{
+    position: relative;
+    overflow: auto;
+    box-sizing: inherit;
+}
+
 
 
 
@@ -366,11 +458,24 @@ font-size: 12px;
     overflow: hidden;
 }
 
+.maincolumn h4{
+    color: #524f4f;
+    font-size: 1.125rem;
+    overflow: hidden;
+    margin: 0 0 10px 0;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+}
+
 .column h4{
     color: #524f4f;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
+    overflow: hidden;
     margin: 0 0 10px 0;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
 }
+
 
 .sidecolumn h4{
     color: #524f4f;
@@ -379,15 +484,27 @@ font-size: 12px;
 }
 
 .sidecolumn {
-    margin-top: -50px;
-    padding-top: 10px;
+    margin-left: 0;
+    width: 25%;
+    padding: 0.5px;
+    box-sizing: inherit;
+    padding-top: 0px;
+    line-height: 1.4;
+    display: block;
+    float: left;
+    min-height: 1px;
 }
+.maincolumn{
+    padding: 10px;
+}
+
+
 .column p{
     font-family: inherit;
     font-size: .8125rem;
     margin: 0 0 10px 0;
     line-height: 20px;
-    color: #524f4f;
+    overflow: hidden;
 }
 
 .sidecolumn p{
@@ -396,6 +513,34 @@ font-size: 12px;
     margin: 0 0 10px 0;
     line-height: 20px;
     color: #524f4f;
+    overflow: hidden;
+    box-sizing: inherit;
+}
+
+.sidecolumn .sidesection3, .sidesection4 img{
+    float: none;
+    margin: 0;
+    vertical-align: middle;
+    border: none;
+    box-sizing: inherit;
+}
+
+.sidecolumn iframe{
+    float: none;
+    margin: 0;
+    border: none;   
+}
+
+.sidecolumn .sidesection1 strong, h3{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    font-size: 1.125rem;
+}
+
+.sidecolumn .sidesection2 strong{
+    line-height: 20px;
+    font-size: .8125rem;
+    font-family: inherit;
 }
 
 .column strong{
@@ -403,6 +548,7 @@ font-size: 12px;
     color: #524f4f;
 }
 
+/*
 .column img {
     max-width: 100%;
     height: 0;
@@ -410,6 +556,28 @@ font-size: 12px;
     vertical-align: middle;
     padding-right: 10px;
 }
+*/
+
+.column img{
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.section3content img{
+    display: block;
+    float: right;
+    margin: 0 0 10px 10px;
+    max-width: 60%;
+}
+
+.section4content img{
+    display: block;
+    float: right;
+    margin: 0 0 10px 10px;
+    padding: 0 0 10px 10px;
+    max-width: 60%;
+}
+
 
 /*other */
 
@@ -423,12 +591,30 @@ font-size: 12px;
 
 
 
+
 .btn:hover{
     transform: translateY(-5px);
     background: black;
     color: white;
 }
 
+
+.careersmidbar-text h1{
+    text-align: center;
+    font-size: 28px;
+    color: black;
+    margin-bottom: 0.67em;
+    margin-top: 0.67em;
+}
+
+.careersmidbar-text p{
+    font-size: 22px;
+    line-height: 1.4em;
+    letter-spacing: -0.0125em;
+    text-align: center;
+    color: #333333;
+    font-weight: lighter;
+}
 .midbar-text h1{
     text-align: center;
     font-size: 28px;
@@ -455,11 +641,6 @@ font-size: 12px;
 .row{
     display: flex;
 
-}
-
-.copyright{
-    color: white;
-    float :right;
 }
 
 .footer-col{
@@ -496,4 +677,7 @@ font-size: 12px;
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }

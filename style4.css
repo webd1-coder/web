@@ -116,7 +116,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 675px;
+    left: 630px;
     top: 570px;
     z-index: 12;
 }
@@ -149,7 +149,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 940px;
+    left: 880px;
     top: 570px;
     z-index: 13;
 }
@@ -182,7 +182,40 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1200px;
+    left: 1100px;
+    top: 570px;
+    z-index: 14 ;
+}
+
+.electBtn button{
+    background-color: black;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: white;
+    white-space: nowrap;
+    width: 270px;
+    height: 54px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    text-align: center;
+    line-height: 17px;
+    letter-spacing: 0px;
+    font-weight: 700;
+    font-size: 13px;
+    border-color: transparent;
+    padding: 10px 17px;
+    backdrop-filter: none;
+    filter: none;
+    transform-origin: 50% 50% 0px;
+    opacity: 1;
+    transform: translate(0px);
+    visibility: visible;
+    position: absolute;
+    display: block;
+    pointer-events: auto;
+    left: 1350px;
     top: 570px;
     z-index: 14 ;
 }

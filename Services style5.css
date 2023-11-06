@@ -419,15 +419,28 @@ font-size: 12px;
     min-height: 1px;
 }
 
+.maincolumn{
+    margin: 0 auto;
+    max-width: 1198px;
+    padding: 0;
+}
 
+.sidecolumn .sidesection1 strong, h3{
+    margin: 0 0 10px 0;
+    overflow: hidden;
+    font-size: 1.125rem;
+}
 
-
-/* Service Fisheries Monitoring Programs Column */
-.FMP-column{
-    
-    bottom: 1500px;
-    left: 0px;
-    position: absolute;
+/* Service Fisheries Monitoring Programs, Scientific Sampling, ProTech Fisheries Domain Column */
+.SideOne-column{
+    float:left;
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    box-sizing: inherit;
+    display: block;
+    min-height: 1px;
+    position: relative;
     font-family: "DIN Next LT Pro",Arial,sans-serif;
     font-size: 1rem;
     line-height: 3.5625rem;
@@ -437,9 +450,27 @@ font-size: 12px;
     background-color: #d4d4d4;
     box-sizing: border-box;
 }
-.ImageFMP{
 
-    
+/* Service Protected Species Program, Dredge Material Inspection, GSA Services Column */
+.SideTwo-Column{
+    float:left;
+    width: 100%;
+    padding: 10px;
+    margin-left: 0;
+    box-sizing: inherit;
+    display: block;
+    min-height: 1px;
+    position: relative;
+    font-family: "DIN Next LT Pro",Arial,sans-serif;
+    font-size: 1rem;
+    line-height: 3.5625rem;
+    font-weight: 400;
+    text-align: left;
+    color: #303030;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+.ImageSideOne{ 
     margin-left: 2.5rem;
     margin-right: 2.5rem;
     margin-top: 1.875rem;
@@ -454,26 +485,14 @@ font-size: 12px;
     
 
 }
-.FMPtext{
+.ImageTextOne{
     position: relative;
     bottom: 580px;
     left: 400px;
     color: black;
 }
 
-/* Service Protected Species Program Column */
-.PSP-Column{
-    position: relative;
-    font-family: "DIN Next LT Pro",Arial,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 400;
-    text-align: left;
-    color: #303030;
-    background-color: #fff;
-}
-
-.PSP-Image{
+.ImageSideTwo{
     position: relative;
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -486,56 +505,6 @@ font-size: 12px;
     width: calc(50% - 5rem);
     margin-top: 0;
     margin-bottom: 0;
-}
-
-/* Service Scientific Sampling Column */
-.SS-column{
-    position: relative;
-    font-family: "DIN Next LT Pro",Arial,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 400;
-    text-align: left;
-    color: #303030;
-    background-color: #d4d4d4;
-    box-sizing: border-box;
-}
-
-/* Service Dredge Material Inspection Column */
-.DMI-Column{
-    position: relative;
-    font-family: "DIN Next LT Pro",Arial,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 400;
-    text-align: left;
-    color: #303030;
-    background-color: #fff;
-}
-
-/* Service ProTech Fisheries Domain Column */
-.PFD-column{
-    position: relative;
-    font-family: "DIN Next LT Pro",Arial,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 400;
-    text-align: left;
-    color: #303030;
-    background-color: #d4d4d4;
-    box-sizing: border-box;
-}
-
-/* Service GSA Services Column */
-.GSA-Column{
-    position: relative;
-    font-family: "DIN Next LT Pro",Arial,sans-serif;
-    font-size: 1rem;
-    line-height: 1.5625rem;
-    font-weight: 400;
-    text-align: left;
-    color: #303030;
-    background-color: #fff;
 }
 
 .copyright{

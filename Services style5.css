@@ -260,7 +260,12 @@ section{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
-
+/*
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+*/
 .container1 {
     display: inline-block
 }
@@ -430,6 +435,12 @@ font-size: 12px;
     overflow: hidden;
     font-size: 1.125rem;
 }
+/*
+.row{
+    display: flex;
+
+}
+*/
 
 .list1{
     position: top;
@@ -565,9 +576,6 @@ font-size: 12px;
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
+    position: bottom;
 }
 
-.footer{
-    background-color: #24262b;
-    padding: 25px 15%;
-}

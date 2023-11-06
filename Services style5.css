@@ -431,6 +431,25 @@ font-size: 12px;
     font-size: 1.125rem;
 }
 
+.list1{
+    position: top;
+    bottom: 400px;
+    left: 20px;
+    font-size: var(--p-font);
+    font-weight: 800;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 25px;
+    transition: all ease .50s;
+    background-color: rgba(0, 0, 0, 0.566);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
+    padding: 15px; /* Adds space inside the box */
+    border: 1px solid #ccc; /* Light grey border */
+
+}
+
 /* Service Fisheries Monitoring Programs, Scientific Sampling, ProTech Fisheries Domain Column */
 .SideOne-column{
     float:left;

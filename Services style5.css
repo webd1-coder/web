@@ -438,9 +438,9 @@ font-size: 12px;
 .ImageFMP{
 
     
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    margin-top: 1.875rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 200px;
     min-height: 1px;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -571,4 +571,7 @@ font-size: 12px;
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
+    overflow: hidden;
+    width: 100%;
+    position: relative;
 }

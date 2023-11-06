@@ -94,7 +94,7 @@ section{
     box-sizing: border-box;
     color: white;
     white-space: nowrap;
-    width: 270px;
+    width: 310px;
     height: 54px;
     min-height: 0px;
     min-width: 0px;
@@ -116,7 +116,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 630px;
+    left: 573px;
     top: 570px;
     z-index: 12;
 }
@@ -182,7 +182,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1100px;
+    left: 1125px;
     top: 570px;
     z-index: 14 ;
 }
@@ -193,7 +193,7 @@ section{
     box-sizing: border-box;
     color: white;
     white-space: nowrap;
-    width: 270px;
+    width: 250px;
     height: 54px;
     min-height: 0px;
     min-width: 0px;
@@ -215,7 +215,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1350px;
+    left: 1390px;
     top: 570px;
     z-index: 14 ;
 }
@@ -300,19 +300,23 @@ section{
 }
 
 .hiring-btn{
-    background-color: #06538c;
-    max-width: 250px;
-    margin: auto;
-    padding: 20px 0px 6px 0px;
-    margin-top: 0.67em;
-    border-radius: 3px;
-    max-height: 70px;
+    background-color:#ff9900;
+	/*background-image: url("/wp-content/uploads/2020/08/homehirebtn.png");*/
+	max-width: 300px;
+	background-size: 35%;
+	background-repeat: no-repeat;
+	background-position: right top;
+	border-radius: 3px;
+	padding: 6px 0px 2px 2px;
+	margin: auto;
+	margin-top:20px;
+    height: 59px;
 }
 
 .midbar{
     margin-left: auto;
     margin-right: auto;
-    margin-top: -100px;
+    margin-top: -210px;
     margin-bottom: 50px;
 
 }
@@ -332,7 +336,7 @@ section{
 .hiring-btn p a {
 text-decoration: underline;
 color: black;
-font-size: 12px;
+font-size: 14px;
 }
 
 

@@ -1,0 +1,193 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: normal 900 1em/1 "Font Awesome 6 Free";
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: whitesmoke;
+    --text-color: whitesmoke;
+    --main-color: #35ad85;
+    --big-font: 5rem;
+    --p-font: 1.1rem;
+    --mid-font: 2.5rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15%;
+    transition: all ease .45s;
+    background-color: rgba(33, 33, 38, 0.5);
+    --text-color: white;
+}
+
+.active {
+    background-color: #24262b;
+  }
+
+.logo{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+.navigationbar{
+    display: flex;
+
+}
+
+.navigationbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+
+.navigationbar a:hover{
+    color: var(--main-color);
+}
+
+.search-btn{
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+#search-icon{
+    font-size: 28px;
+    margin-left: 10px;
+    z-index: 6;
+}
+
+body{
+    background: var(--bg-color);
+    color: whitesmoke;
+    overflow-x: hidden;
+    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
+}
+
+section{
+    padding: 0 15%;
+}
+
+
+.home{
+    position: relative;
+    width: 100%;
+    height:75vh; /*prev 100 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background-size: cover;
+    animation: change-bg 20s steps(10, jump-none) forwards infinite;
+}
+
+.header-image{
+    position: relative;
+    bottom: 150px;
+    z-index: -1;
+}
+.home-text h1{
+    position: absolute;
+    bottom: 760px;
+    left: 90px;
+    font-size: var(--big-font);
+    margin: 23px 0;
+    color: rgb(252, 251, 251)
+}
+
+.list1{
+    position: fixed;
+    bottom: 400px;
+    left: 20px;
+    font-size: var(--p-font);
+    font-weight: 800;
+    color: black;
+    margin: 0 25px;
+    transition: all ease .50s;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
+    padding: 15px; /* Adds space inside the box */
+    border: 1px solid #ccc; /* Light grey border */
+    z-index: 1;
+}
+
+.service-description{
+    width: 50%; /* Adjust the width as needed */
+    margin: 0 500px; /* This will center your text block */
+    padding: 20px; /* This adds some space inside the container */
+    text-align: justify;
+}
+.home-text p{
+    font-size: var(--mid-font);
+    font-weight: 400;
+    color: whitesmoke;
+    line-height: 30px;
+    mask-border: 50px;
+    margin-bottom: 30px;
+}
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+.footer-col a:hover{
+    color: #35ad85;
+    padding-left: 8px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 25px 15%;
+}

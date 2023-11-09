@@ -81,39 +81,36 @@ body{
     background: var(--bg-color);
     color: whitesmoke;
     overflow-x: hidden;
-    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
-}
-
-section{
-    padding: 0 15%;
+    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
 }
 
 
-.home{
-    position: relative;
-    width: 100%;
-    height:75vh; /*prev 100 */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    background-size: cover;
-    animation: change-bg 20s steps(10, jump-none) forwards infinite;
-}
 
 .header-image{
     position: relative;
-    bottom: 150px;
-    z-index: -1;
+    width: 100%;
+    height:45vh; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+    align-items: center;
 }
+
 .home-text h1{
     position: absolute;
-    bottom: 760px;
-    left: 90px;
-    font-size: var(--big-font);
-    margin: 23px 0;
-    color: rgb(252, 251, 251)
+    font-size: 50px;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+.header-image .homeimg img{
+    width:300%;
+}
+
+
 
 .list1{
     position: fixed;
@@ -191,3 +188,9 @@ section{
     background-color: #24262b;
     padding: 25px 15%;
 }
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+ }

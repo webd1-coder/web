@@ -10,7 +10,7 @@
 }
 
 :root {
-    --bg-color: whitesmoke;
+    --bg-color: #f7f7f7;
     --text-color: whitesmoke;
     --main-color: #35ad85;
     --big-font: 5rem;
@@ -205,6 +205,7 @@ section{
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
+    /*margin-left: -220px;*/
 }
 
 
@@ -360,11 +361,39 @@ font-size: 12px;
     box-sizing: inherit;
 }
 
+.sidecolumn ul{
+    font-size: .8125rem;
+    line-height: 1.0625rem;
+    box-sizing: inherit;
+}
+
+.careersmidbar-text ul{
+    font-size: 1.125rem;
+    line-height: 1.0625rem;
+    box-sizing: inherit;
+}
+
+.careersmidbar-text li{
+    line-height: 20px;
+    font-family: inherit;
+    font-size: 1.125rem;
+    box-sizing: inherit;
+    list-style: inside;
+}
+
 .column li{
     line-height: 20px;
     font-family: inherit;
     font-size: .8125rem;
     margin: 0 0 5px 0;
+    box-sizing: inherit;
+    list-style: inside;
+}
+
+.sidecolumn li{
+    line-height: 20px;
+    font-family: inherit;
+    font-size: .8125rem;
     box-sizing: inherit;
     list-style: inside;
 }
@@ -404,13 +433,9 @@ font-size: 12px;
     overflow: hidden;
 }
 
-.sidecolumn{
-    background-color: whitesmoke;
-}
 
-.column{
-    background-color: whitesmoke;
-}
+
+
 
 
 .maincolumn{
@@ -418,6 +443,23 @@ font-size: 12px;
     max-width: 1198px;
     padding: 0;
 }
+
+.sidecolumn .sidesection6 u{
+    text-decoration: underline;
+}
+
+.careersmidbar-text u {
+    text-decoration: underline;
+}
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+ }
+
+
+
 .sidecolumn .title{
     line-height: 1.5rem;
     margin-bottom: 0;
@@ -600,7 +642,7 @@ font-size: 12px;
 
 
 .careersmidbar-text h1{
-    text-align: center;
+    text-align: left;
     font-size: 28px;
     color: black;
     margin-bottom: 0.67em;
@@ -608,10 +650,10 @@ font-size: 12px;
 }
 
 .careersmidbar-text p{
-    font-size: 22px;
+    font-size: 1.125rem;
     line-height: 1.4em;
     letter-spacing: -0.0125em;
-    text-align: center;
+    text-align: left;
     color: #333333;
     font-weight: lighter;
 }
@@ -647,6 +689,9 @@ font-size: 12px;
     width: 25%;
     padding: 0 15px;
 }
+
+
+
 .footer-col h4{
     font-size: 18px;
     color: whitesmoke;
@@ -654,6 +699,7 @@ font-size: 12px;
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    width: 169px;
 }
 
 .footer-col ul li:not(:last-child){
@@ -661,13 +707,16 @@ font-size: 12px;
 }
 
 .footer-col a{
-    font-size: 16px;
+    font-size: 15px;
     text-transform: capitalize;
     color: #ffffff;
     font-weight: 300;
     color: #bbbbbb;
     display: block;
 }
+
+
+
 
 .footer-col a:hover{
     color: #35ad85;

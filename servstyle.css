@@ -89,13 +89,15 @@ body{
     overflow-x: hidden;
     padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
     --text-color: black;
+    width: auto;
+    height: auto;
 }
 
 #search-icon{
     font-size: 28px;
     margin-left: 10px;
     z-index: 6;
-}
+}   
 
 .service1 .imglay {
     position: relative;
@@ -112,6 +114,17 @@ body{
     display: block;
 }
 
+
+
+.servimg1 img,
+.servimg2 img,
+.servimg3 img,
+.servimg4 img {
+    height: 300px;
+    width: 530px;
+    display: block;
+    border-style: none;
+}
 
 
 .service1 .textlay {
@@ -179,7 +192,9 @@ body{
     margin-left: -.9375rem;
     margin-right: -.9375rem;
     background-color: #f7f7f7;
-    height: 535px;
+    max-height: 500px;
+    height: 100%;
+
 }
 
 .service1 .sizing{
@@ -438,7 +453,7 @@ padding: 10px;
     margin-left: -.9375rem;
     margin-right: -.9375rem;
     background-color: #eff0f0;
-    height: 535px;
+    height: 500px;
 }
 
 
@@ -464,7 +479,7 @@ padding: 10px;
     margin-left: -.9375rem;
     margin-right: -.9375rem;
     background-color: #f7f7f7;
-    height: 535px;
+    height: 500px;
 }
 
 
@@ -492,7 +507,7 @@ padding: 10px;
     margin-left: -.9375rem;
     margin-right: -.9375rem;
     background-color: #eff0f0;
-    height: 535px;
+    height: 500px;
 }
 
 

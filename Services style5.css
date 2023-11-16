@@ -542,6 +542,23 @@ font-size: 12px;
     float :right;
 }
 
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+}
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0px;
+    margin: 0px 10px 10px 0px;
+    margin-top: -20px;
+}
+
+
 .footer-col{
     width: 25%;
     padding: 0 15px;
@@ -576,6 +593,7 @@ font-size: 12px;
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
-    position: bottom;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
-

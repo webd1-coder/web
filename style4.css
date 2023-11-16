@@ -3,9 +3,9 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: normal 900 1em/1 "Font Awesome 6 Free";
     list-style: none;
     text-decoration: none;
+    font-family: 'PT Sans', sans-serif;
 }
 
 :root {
@@ -104,7 +104,7 @@ section{
     line-height: 17px;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border-color: transparent;
     padding: 10px 17px;
     backdrop-filter: none;
@@ -116,9 +116,10 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 550px;
-    top: 570px;
+    left: 400px;
+    top: 507px;
     z-index: 12;
+    height: 45px;
 }
 
 .envBtn button{
@@ -137,7 +138,7 @@ section{
     line-height: 17px;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border-color: transparent;
     padding: 10px 17px;
     backdrop-filter: none;
@@ -149,9 +150,10 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 880px;
-    top: 570px;
+    left: 730px;
+    top: 507px;
     z-index: 13;
+    height: 45px;
 }
 
 .researchBtn button{
@@ -170,7 +172,7 @@ section{
     line-height: 17px;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border-color: transparent;
     padding: 10px 17px;
     backdrop-filter: none;
@@ -182,9 +184,10 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1125px;
-    top: 570px;
-    z-index: 14 ;
+    left: 980px;
+    top: 507px;
+    z-index: 16;    
+    height: 45px;
 }
 
 .electBtn button{
@@ -203,7 +206,7 @@ section{
     line-height: 17px;
     letter-spacing: 0px;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border-color: transparent;
     padding: 10px 17px;
     backdrop-filter: none;
@@ -215,9 +218,10 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1410px;
-    top: 570px;
+    left: 1260px;
+    top: 507px;
     z-index: 14 ;
+    height: 45px;
 }
 
 .home{
@@ -488,6 +492,7 @@ font-size: 14px;
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    width: 169px;
 }
 
 .footer-col ul li:not(:last-child){
@@ -495,7 +500,7 @@ font-size: 14px;
 }
 
 .footer-col a{
-    font-size: 16px;
+    font-size: 15px;
     text-transform: capitalize;
     color: #ffffff;
     font-weight: 300;
@@ -512,3 +517,9 @@ font-size: 14px;
     background-color: #24262b;
     padding: 25px 15%;
 }
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+ }

@@ -266,7 +266,7 @@ section{
 }
 
 .list1{
-    position: fixed;
+    position: absolute;
     bottom: 400px;
     left: 20px;
     font-size: var(--p-font);
@@ -274,10 +274,6 @@ section{
     color: black;
     margin: 0 25px;
     transition: all ease .50s;
-    background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-    padding: 15px; /* Adds space inside the box */
-    border: 1px solid #ccc; /* Light grey border */
 }
 
 .service1{
@@ -289,7 +285,6 @@ section{
 .service2image{
     position: relative;
     bottom: 500px;
-    z-index: -1;
 }
 
 .service2text{
@@ -307,8 +302,7 @@ section{
 
 .service3image{
     position: relative;
-    bottom:  300px;
-    z-index: -1;
+    bottom:  300px
 }
 
 .service3text{
@@ -326,8 +320,7 @@ section{
 
 .service4image{
     position: relative;
-    bottom:  100px;
-    z-index: -1;
+    bottom:  100px
 }
 
 .service4text{

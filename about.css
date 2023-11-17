@@ -8,8 +8,44 @@
     text-decoration: none;
 }
 
+
+/* Your existing styles */
+
+/* Media query for screens smaller than 768 pixels (adjust the breakpoint as needed) */
+@media only screen and (max-width: 768px) {
+    /* Adjustments for mobile view */
+
+    /* Reset the width for the whole page */
+    body {
+        width: 100%;
+    }
+
+    /* Center the header */
+    .header {
+        text-align: center;
+    }
+
+    /* Adjustments for the navigation bar */
+    .navigationbar {
+        display: block;
+        text-align: center;
+        margin-top: 10px; /* Adjust as needed */
+    }
+
+
+}
+
+
+
+
+html{
+    overflow-x: hidden;
+}
+
 .header{
+    overflow: hidden;
     position: fixed;
+    box-sizing: border-box;
     top: 0;
     right: 0;
     width: 100%;
@@ -17,7 +53,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15%;
+    padding: 10px 3%; /*15% orignial */
     transition: all ease .45s;
     background-color: rgba(33, 33, 38, 0.5);
     --text-color: white;
@@ -28,7 +64,9 @@
 }
 
 .navigationbar{
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
 }
 
@@ -69,13 +107,22 @@
 
 /* Add more specific styles as needed */
 
+.navigationbar li{
+    margin: 10px 0;
+}
 
+.navigationbar ul{
+    display: flex;
+    list-style: none;
+}
 
 .navigationbar a{
-    font-size: var(--p-font);
+    text-align: center;
+    display: block;
+    font-size: 14px;
     font-weight: 500;
     color: var(--text-color);
-    margin: 0 25px;
+    margin: 0 15px; /*25 orig*/
     transition: all ease .50s;
 }
 
@@ -84,12 +131,79 @@
 }
 
 .search-btn{
-    padding: 10px 20px;
+    padding: 8px 15px; /*10px 20px orig*/
     border-radius: 100px;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
+
+/* Adjust navigationbar for smaller screens */
+@media (max-width: 991px) {
+    .header {
+        width: 100vw;
+        padding: 10px 0; /* Adjust as needed */
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        overflow-x: hidden;
+    }
+
+    .navigationbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .navigationbar li {
+        margin: 10px 0;
+    }
+
+    .navigationbar a {
+        font-size: 14px;
+        margin: 0 15px;
+        display: block;
+    }
+    
+    .navigationbar ul{
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+
+    .home {
+        height: auto; /* Adjust as needed */
+    }
+
+    .home-text h1,
+    .home-text p {
+        position: static;
+        transform: none;
+        text-align: center;
+    }
+
+    /* Adjust styles for other sections similarly */
+
+    .maincolumn,
+    .sidecolumn,
+    .midbar,
+    .section1,
+    .section2,
+    .section3,
+    /* Add more sections as needed */
+    .section4,
+    .section5,
+    .footer {
+        width: 100vw;
+        padding: 20px; /* Adjust as needed */
+    }
+
+    /* Add more specific styles for other sections as needed */
+}
+
+
+ 
+
 
 body{
     background: var(--bg-color);
@@ -98,30 +212,47 @@ body{
     padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
     --text-color: black;
 }
-
-.home{
+.home {
     position: relative;
-    width: 100%;
-    height:45vh; 
+    height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
-    align-items: center;
 }
 
-.home-text h1{
+.home-text {
+    text-align: center;
+}
+
+.home-text h1,
+.home-text p {
     position: absolute;
-    font-size: 50px;
     color: white;
-    top: 50%;
-    left: 50%;
+    font-weight: 100;
+}
+
+.home-text h1 {
+    top: 30%;
+    left: 8%;
+    color: #0056b3;
+    font-size: 20px;
     transform: translate(-50%, -50%);
 }
 
-.home .homeimg img{
+.home-text p {
+    top: 50%; /* Adjust the percentage based on your preference */
+    left: 10%;
+    font-size: 45px;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.home .homeimg{
     width: 300%;
     height: 300%;
+    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
 }
 
 .home .home-text span{
@@ -132,6 +263,30 @@ body{
     margin: 0 auto;
     max-width: 1198px;
     padding: 0;
+}
+
+
+.list1{
+    position: absolute;
+    top: 75%;
+    left: 85%;
+    transform: translate(-50%, 50%);
+    width: 300px;
+    font-size: var(--p-font);
+    font-weight: 800;
+    color: black;
+    margin: 0 25px;
+    transition: all ease .50s;
+    background-color: whitesmoke;
+    padding: 15px; /* Adds space inside the box */
+    z-index: 1;
+}
+
+.list1 p{
+    font-size: 16px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: white;
 }
 
 .maincolumn h4{
@@ -277,9 +432,16 @@ body{
 }
 .sidecolumn .sidesection1{
     position: relative;
-    overflow: auto;
-    box-sizing: inherit;
+    width: 300px;
+    
 }
+.sidesection1content{
+overflow: hidden;
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
 
 .sidecolumn h1, h2, h5, h6{
     margin: 0 0 10px 0;
@@ -313,13 +475,7 @@ body{
     box-sizing: inherit;
 }
 
-.sidecolumn .sidesection3, .sidesection4 img{
-    float: none;
-    margin: 0;
-    vertical-align: middle;
-    border: none;
-    box-sizing: inherit;
-}
+
 
 .sidecolumn .sidesection1 a{
     font-family: 'Montserrat';
@@ -417,17 +573,24 @@ body{
 .title{
     align-self: flex-start;
 }
-.section3{
+
+
+.section3content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    text-align: center;
 }
 
+
 .imgSlides{
-   width: 250px;
-   height: 125px;
-}
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    opacity: 0.5;
+    transition: opacity 0.5s ease;
+ }
+
 
 
 
@@ -504,18 +667,20 @@ body{
 }
 
 
-.leftSlideBtn, .rightSlideBtn {
+.leftSlideBtn,
+.rightSlideBtn {
     position: absolute;
     top: 40%;
     transform: translateY(-50%);
-    background-color: #0056b3;
-    color: #ffffff;
+    background-color: #004080; /* Ocean blue color */
+    color: #ffffff; /* White text color */
     border: none;
     padding: 8px 12px;
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-  }
+    z-index: 1;
+}
   
   .leftSlideBtn {
     left: -20px; /* Adjust this value to move the button outside to the left */
@@ -525,9 +690,10 @@ body{
     right: -20px; /* Adjust this value to move the button outside to the right */
   }
   
-  .leftSlideBtn:hover, .rightSlideBtn:hover {
-    background-color: #007BFF;
-  }
+  .leftSlideBtn:hover,
+.rightSlideBtn:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
 
 .section4 .sect4col1{
     padding: 10px;
@@ -581,10 +747,9 @@ body{
 }
 
 
-
 .footer{
     background-color: #24262b;
-    padding: 25px 15%;
+    padding: 25px 10px;
     overflow: hidden;
     width: 100%;
     position: relative;

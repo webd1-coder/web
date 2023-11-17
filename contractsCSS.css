@@ -258,3 +258,9 @@ section{
     background-color: #24262b;
     padding: 25px 15%;
 }
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+ }

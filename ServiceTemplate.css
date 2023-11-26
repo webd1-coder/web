@@ -1,10 +1,9 @@
-
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: normal 900 1em/1 "Font Awesome 6 Free";
-    list-style: none;
+  
     text-decoration: none;
 }
 
@@ -17,10 +16,10 @@
     --mid-font: 2.5rem;
 }
 
-.header{
+.header {
+    list-style: none;
     position: fixed;
     top: 0;
-    right: 0;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -32,41 +31,115 @@
     --text-color: white;
 }
 
-
-.header-image {
-    height: 400px; /* Set the desired height for your header */
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    overflow: hidden;
+.header-image img {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: 600px; /* Ensure the image takes the full height of the container */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    transform: skewY(-3.5deg); /* Skew the image vertically */
 }
 
-.header-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    background: linear-gradient(to top left, whitesmoke 20%, rgba(0, 0, 0, 0) 25%);
+.header-image{
+    margin-bottom: 75px;
+    margin-top: -165px;
 }
-
-
-
 .center-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-100%, -50%);
+    text-align: left;
+    white-space: nowrap;
     color: white;
     z-index: 2;
 }
 
+.column{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top ;
+    margin-right: 3%;
+    list-style: disc;
+    margin-left: 30px;
+}
+
+
+.column h3{
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.column ul{
+    margin-left: 20px;
+    padding-left: 0;
+}
+
+.column li{
+    margin-bottom: 8px;
+}
+
+.column2{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top ;
+    margin-right: 3%;
+    list-style: disc;
+    border-left: 1px solid #000;
+}
+
+.column2 ul{
+margin-left: 20px;
+}
+
+
+.column2 li{
+    margin-bottom: 8px;
+}
+
+.title{
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: black;
+    font-size: 1.375rem;
+    background-color: #e4e4e4;
+    margin-bottom: 15px;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.title h2, h1, h3, h4 {
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+    font-size: 30px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    padding: 10px 10px;
+}
+
+.column button, .column2 button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3498db;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+}
+
+
 .center-text h1 {
-    margin: 0; /* Remove default margin on h1 */
-    font-size: 3rem;
+    margin: 0;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 1.15em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
     color: white;
 }
@@ -86,6 +159,7 @@
 }
 
 .navigationbar{
+    list-style: none;
     display: flex;
 
 }
@@ -159,7 +233,7 @@ section{
 
 
 
-
+/*
 .list1{
     position: fixed;
     top: 50%;
@@ -172,22 +246,28 @@ section{
     margin: 0 25px;
     transition: all ease .50s;
     background-color: white;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-    padding: 15px; /* Adds space inside the box */
-    border: 1px solid #ccc; /* Light grey border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect 
+    padding: 15px; /* Adds space inside the box 
+    border: 1px solid #ccc; /* Light grey border 
     z-index: 1;
 }
+*/
 
 .imgmid {
     display: block;
     margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    
 }
 
+
 .service-description{
-    width: 50%; /* Adjust the width as needed */
+    width: 55%; /* Adjust the width as needed */
     margin: 0 500px; /* This will center your text block */
     padding: 20px; /* This adds some space inside the container */
-    text-align: justify;
+    text-align: left;
+    z-index: -1;
 }
 
 .service-description h3{
@@ -218,6 +298,7 @@ section{
 .footer-col{
     width: 25%;
     padding: 0 15px;
+    list-style: none;
 }
 .footer-col h4{
     font-size: 18px;
@@ -226,10 +307,16 @@ section{
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    list-style: none;
 }
 
 .footer-col ul li:not(:last-child){
     margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-col ul li{
+    list-style: none;
 }
 
 .footer-col a{
@@ -239,20 +326,24 @@ section{
     font-weight: 300;
     color: #bbbbbb;
     display: block;
+    list-style: none;
 }
 
 .footer-col a:hover{
     color: #35ad85;
     padding-left: 8px;
+    list-style: none;   
 }
 
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
     z-index: 1000;
+    list-style: none;
 }
 .footer-col .social-links li{
     float: left;
     padding: 0x;
     margin: 0px 10px 10px 0px;
+    list-style: none;
  }

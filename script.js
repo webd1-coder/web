@@ -74,17 +74,21 @@ function showDivs(n) {
 
 
 function animateCountingWithCommas(element, target, duration) {
-let start = 0;
-const step = target / duration;
-const interval = setInterval(function() {
-    start += step;
-    element.textContent = Math.floor(start).toLocaleString(); // Add commas
-    if (start >= target) {
-        element.textContent = target.toLocaleString(); // Add commas
-        clearInterval(interval);
-    }
-}, 1);
+  let start = 0;
+  const frames = 400; // Number of frames per second
+  const interval = duration / frames;
+  const step = (target - start) / (frames * (duration / 1000)); // Calculate dynamic step size
+
+  const animation = setInterval(function () {
+      start += step;
+      element.textContent = Math.floor(start).toLocaleString(); // Add commas
+      if (start >= target) {
+          element.textContent = target.toLocaleString(); // Add commas
+          clearInterval(animation);
+      }
+  }, interval);
 }
+
 
 // Trigger counting animation with commas
 function startCountingAnimation() {
@@ -162,6 +166,13 @@ document.addEventListener('DOMContentLoaded', function() {
   startCountingAnimation();
   showDivs(slideIndex);
 
-  // Check if elements are in viewport on page load
-  startCountingAnimationIfInViewport();
+// Check if elements are in viewport on page load
+startCountingAnimationIfInViewport();
+
+// Automatically advance the slides every 3 seconds
+setInterval(nextSlide, 2000);  
+
+function nextSlide() {
+  plusDivs(1);
+}
 });

@@ -1,24 +1,17 @@
-
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: normal 900 1em/1 "Font Awesome 6 Free";
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
     list-style: none;
     text-decoration: none;
 }
 
-:root {
-    --bg-color: whitesmoke;
-    --text-color: whitesmoke;
-    --main-color: #35ad85;
-    --big-font: 5rem;
-    --p-font: 1.1rem;
-    --mid-font: 2.5rem;
-}
-
 .header{
+    overflow: hidden;
     position: fixed;
+    box-sizing: border-box;
     top: 0;
     right: 0;
     width: 100%;
@@ -26,36 +19,37 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 15%;
+    padding: 10px 3%; /*15% orignial */
     transition: all ease .45s;
     background-color: rgba(33, 33, 38, 0.5);
     --text-color: white;
 }
 
-.active {
+.active{
     background-color: #24262b;
-  }
-
-.logo{
-    color: var(--text-color);
-    font-size: 41px;
-    font-weight: 600;
-}
-
-.logo span{
-    color: var(--main-color);
 }
 
 .navigationbar{
-    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigationbar li{
+    margin: 10px 0;
+}
 
+.navigationbar ul{
+    display: flex;
+    list-style: none;
 }
 
 .navigationbar a{
-    font-size: var(--p-font);
+    text-align: center;
+    display: block;
+    font-size: 14px;
     font-weight: 500;
     color: var(--text-color);
-    margin: 0 25px;
+    margin: 0 15px; /*25 orig*/
     transition: all ease .50s;
 }
 
@@ -64,153 +58,102 @@
 }
 
 .search-btn{
-    padding: 10px 20px;
+    padding: 8px 15px; /*10px 20px orig*/
     border-radius: 100px;
     display: flex;
     align-items: center;
     cursor: pointer;
 }
 
-#search-icon{
-    font-size: 28px;
-    margin-left: 10px;
-    z-index: 6;
-}
-
 body{
     background: var(--bg-color);
-    color: whitesmoke;
+    color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
+    --text-color: black;
 }
 
-section{
-    padding: 0 15%;
-}
-
-
-.home{
+.home {
     position: relative;
-    width: 100%;
-    height:75vh; /*prev 100 */
+    height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    background-size: cover;
-    animation: change-bg 20s steps(10, jump-none) forwards infinite;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.header-image{
+.home-text {
+    text-align: center;
+}
+
+.home-text h1,
+.home-text p {
+    position: absolute;
+    color: white;
+    font-weight: 100;
+}
+
+.home-text p {
+    top: 50%; /* Adjust the percentage based on your preference */
+    left: 18%;
+    font-size: 45px;
+    transform: translate(-50%, -50%);
+}
+
+.home .homeimg{
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.box{
+    width: 70%;
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 30px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 3px 3px 27px 4px rgba(0,0,0,0.19);
+    text-align: left;
+
+}
+
+.box img{
+    float: left;
+    margin: 4px 10px 0px 0;
+    display: block;
     position: relative;
-    bottom: 150px;
-    z-index: -1;
-}
-.home-text h1{
-    position: absolute;
-    bottom: 760px;
-    left: 90px;
-    font-size: var(--big-font);
-    margin: 23px 0;
-    color: rgb(252, 251, 251)
 }
 
-.contract-img1{
-    position: absolute;
-    bottom: 510px;
-    left: 470px;
-    z-index: 2;
+.box u{
+    text-decoration: underline;
+}
+.box h2{
+    letter-spacing: -.25px;
+    text-transform: none;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+    color: #4c4c4c;
 }
 
-.list1{
-    position: absolute;
-    height: 300px;
-    bottom: 370px;
-    left: 20px;
-    color: black;
-    margin: 25px 400px;
-    transition: all ease .50s;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-    padding: 5px; /* Adds space inside the box */
-    padding-left: 250px;
-    border: 1px solid #ccc; /* Light grey border */
-    z-index: 1;
+.box strong{
+    font-weight: bold;
 }
 
-.list-text1 p{
-    font-size: 18px;
-    
-}
-
-.list-text2 p{
-    font-size: 15px;
-    
-}
-
-.list-text3 p{
-    font-size: 15px;
-}
-
-.list-text4 p{
-    font-size: 15px;
-}
-
-.contract-img1b{
-    position: absolute;
-    bottom: 150px;
-    left: 460px;
-    z-index: 2;
-}
-
-.list1b{
-    position: absolute;
-    height: 270px;
-    bottom: 50px;
-    left: 20px;
-    color: black;
-    margin: 25px 400px;
-    transition: all ease .50s;
-    background-color: white;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-    padding: 15px; /* Adds space inside the box */
-    padding-left: 250px;
-    border: 1px solid #ccc; /* Light grey border */
-    z-index: 1;
-}
-
-.list-text1b p{
-    font-size: 18px;
-    
-}
-
-.list-text2b p{
-    font-size: 15px;
-    
-}
-
-.list-text3b p{
-    font-size: 15px;
-}
-
-.list-text4b p{
-    font-size: 15px;
-}
-
-.service-description{
-    width: 50%; /* Adjust the width as needed */
-    margin: 0 500px; /* This will center your text block */
-    padding: 20px; /* This adds some space inside the container */
-    text-align: justify;
-    color: #ffffff;
-}
-.home-text p{
-    font-size: var(--mid-font);
-    font-weight: 400;
-    color: whitesmoke;
-    line-height: 30px;
-    mask-border: 50px;
-    margin-bottom: 30px;
+.box p{
+    font-weight: normal;
+    margin: 0.85em 0;
+    font-size: 14px;
+    color: #4c4c4c;
 }
 
 .container{
@@ -225,7 +168,7 @@ section{
 
 .footer-col{
     width: 25%;
-    padding: 0 15px;
+    padding: 0 25px;
 }
 .footer-col h4{
     font-size: 18px;

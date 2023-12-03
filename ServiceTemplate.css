@@ -107,7 +107,7 @@ margin-left: 20px;
     font-family: 'PT Sans', sans-serif;
 }
 
-.title h2, h1, h3, h4 {
+.title h2, h3, h4 {
     line-height: 1.5rem;
     margin-bottom: 0;
     text-transform: capitalize;
@@ -119,6 +119,17 @@ margin-left: 20px;
     padding: 10px 10px;
 }
 
+.title h1{
+    line-height: 1.5rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
+    text-rendering: optimizeLegibility;
+    page-break-after: avoid;
+    font-size: 15px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    padding-right: 800px;
+}
 .column button, .column2 button {
     display: inline-block;
     padding: 10px 20px;
@@ -264,10 +275,23 @@ section{
 
 .service-description{
     width: 55%; /* Adjust the width as needed */
-    margin: 0 500px; /* This will center your text block */
+    margin: 0 425px; /* This will center your text block */
     padding: 20px; /* This adds some space inside the container */
     text-align: left;
     z-index: -1;
+}
+
+.service-description p{
+    margin-bottom: 30px;
+}
+
+.service-description h2{
+    font-weight: bold;
+    line-height: 1.35em;
+    letter-spacing: .03em;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    font-size: 20px;
 }
 
 .service-description h3{

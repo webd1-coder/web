@@ -54,33 +54,37 @@
     cursor: pointer;
 }
 
-.home{
+.home {
     position: relative;
-    width: 100%;
-    height:45vh; 
+    height: 25vh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     overflow: hidden;
-    align-items: center;
 }
 
-.home-text h1{
+.home-text {
+    text-align: center;
+}
+
+.home-text h1,
+.home-text p {
     position: absolute;
-    font-size: 50px;
     color: white;
-    top: 50%;
-    left: 50%;
+    font-weight: 100;
+}
+
+.home-text p {
+    top: 50%; /* Adjust the percentage based on your preference */
+    left: 18%;
+    font-size: 45px;
     transform: translate(-50%, -50%);
 }
 
-.home .homeimg img{
+.home .homeimg{
     width: 300%;
     height: 300%;
-}
-
-.home .home-text span{
-    color: #005391;
+    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
 }
 
 

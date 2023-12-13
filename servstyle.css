@@ -34,6 +34,10 @@
 
 }
 
+.navigationbar ul{
+    display: flex;
+}
+
 .navigationbar a{
     font-size: var(--p-font);
     font-weight: 500;
@@ -521,7 +525,6 @@ padding: 10px;
     background-color: #24262b;
     padding: 25px 15%;
     overflow: hidden;
-    width: 100%;
     position: relative;
 }
 
@@ -550,7 +553,6 @@ padding: 10px;
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
-    width: 169px;
 }
 
 .container{
@@ -957,36 +959,65 @@ body {
     max-width: 100%;
 }
 
-.footer {
-    padding: 15px; /* Adjust padding as needed for mobile */
-    text-align: center;
-    background-color: #24262b; /* Set your desired background color */
-    color: #ffffff; /* Set your desired text color */
+.container{
+    max-width: 1170px;
+    margin: auto;
 }
 
-.footer-col {
-    width: 100%;
-    margin-bottom: 20px;
+.row{
+    display: flex;
+
 }
 
-.footer-col h4 {
-    margin-bottom: 15px;
-    color: whitesmoke; /* Set your desired heading color */
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+    list-style: none;
 }
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-.footer-col ul{
+.footer-col h4{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
     list-style: none;
 }
 
-.footer-col a {
-    color: #bbbbbb; /* Set your desired link color */
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+    list-style: none;
 }
 
-.footer-col a:hover {
-    color: #35ad85; /* Set your desired link hover color */
+.footer-col ul li{
+    list-style: none;
 }
-}   
+
+.footer-col a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    list-style: none;
+}
+
+.footer-col a:hover{
+    color: #35ad85;
+    padding-left: 8px;
+    list-style: none;   
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 25px 15%;
+    z-index: 1000;
+    list-style: none;
+}
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+    list-style: none;
+ }

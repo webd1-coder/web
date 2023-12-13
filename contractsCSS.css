@@ -168,8 +168,11 @@ main{
 
 .footer-col{
     width: 25%;
-    padding: 0 25px;
+    padding: 0 15px;
 }
+
+
+
 .footer-col h4{
     font-size: 18px;
     color: whitesmoke;
@@ -177,6 +180,7 @@ main{
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
+    /*width here */
 }
 
 .footer-col ul li:not(:last-child){
@@ -192,6 +196,9 @@ main{
     display: block;
 }
 
+
+
+
 .footer-col a:hover{
     color: #35ad85;
     padding-left: 8px;
@@ -200,10 +207,13 @@ main{
 .footer{
     background-color: #24262b;
     padding: 25px 15%;
+    overflow: hidden;
+    width: 100%;
 }
 
 .footer-col .social-links li{
     float: left;
     padding: 0x;
     margin: 0px 10px 10px 0px;
+    list-style: none;
  }

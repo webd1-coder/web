@@ -31,6 +31,10 @@
     --text-color: white;
 }
 
+header ul{
+    list-style: none;
+}
+
 .header-image img {
     width: 100%; /* Ensure the image takes the full width of the container */
     height: 600px; /* Ensure the image takes the full height of the container */
@@ -169,7 +173,7 @@ margin-left: 20px;
     color: var(--main-color);
 }
 
-.navigationbar{
+.navigationbar ul{
     list-style: none;
     display: flex;
 

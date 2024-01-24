@@ -21,11 +21,19 @@
 
 <body>
     <header class="header">
-        <img src="images/logo.png" alt="" width="85"onclick="window.location.href = 'homepagev4.html';"/>
+        <img src="images/logo.png" alt="" width="85"onclick="window.location.href = 'homepageV4.html';"/>
         <div class="navigationbar">
             <ul>
                 <li><a href="about.html">Who We Are</a></li>
-                <li><a href="services.html">What We Do</a></li>
+                <div class="dropdown">
+                <li><a class="dropbtn">What We Do</a></li>
+                <div class="dropdown-content">
+                    <a href="services.html#service3">Fisheries Management and Observation</a>
+                    <a href="services.html#service2">Environmental Mitigation</a>
+                    <a href="services.html#service1">Scientific Research and Technical Services</a>
+                    <a href="services.html#service4">Electronic Monitoring</a>
+                </div>
+                </div>
                 <li><a href="contracts.html">Contracts</a></li>
                 <li><a href="careers.html">Careers</a></li>
                 <li><a href="psotraining.html">PSO Training</a></li>
@@ -59,7 +67,7 @@
 
 
 
-    <div class="service3">
+    <div id="service3" class="service3">
         <div class="sizing">
         <aside class="imglay3">
             <div class="servimg3">
@@ -88,7 +96,7 @@
 <!--maybe a /div?-->
 
 
-<div class="service2">
+<div id="service2" class="service2">
     <div class="sizing">
     <aside class="imglay2">
         <div class="servimg2">
@@ -114,7 +122,7 @@
         </aside>
     </div>
 </div>
-<div class="service1">
+<div id="service1" class="service1">
     <div class="sizing">
     <aside class="imglay">
         <div class="servimg1">
@@ -142,7 +150,7 @@
 </div>
 
 
-<div class="service4">
+<div id="service4"  class="service4">
     <div class="sizing">
     <aside class="imglay4">
         <div class="servimg4">

@@ -82,7 +82,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
     --text-color: black;
 }
 

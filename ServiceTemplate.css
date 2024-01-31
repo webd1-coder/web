@@ -102,7 +102,25 @@ header ul{
     margin-left: 30px;
 }
 
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #3498db; /* Green background color */
+    color: white; /* Text color */
+    border: 1px solid #3498db; /* Green border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer;
+}   
+.download-button:hover {
+    color: white;
+}   
 
+.button-container{
+    text-align: center;
+}
 .column h3{
     text-align: center;
     font-weight: bold;

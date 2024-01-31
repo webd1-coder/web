@@ -334,7 +334,7 @@ section{
 
 .home-text h1{
     position: relative;
-    bottom: 20px;
+    bottom: 0px;
     left: 0px;
     font-size: var(--big-font);
     margin: 23px 0;

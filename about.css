@@ -568,7 +568,7 @@
 
     .midbar{
         text-align: center;
-        background-color: whitesmoke;
+        background-color: white;
         padding-bottom: 1%;
     }
 
@@ -607,7 +607,7 @@
         justify-content: space-around;
     }
 
-    .midbar-text .col1, .midbar-text .col2, .midbar-text .col3, .midbar-text .col4, .midbar-text .col5 {
+    .midbar-text .col1, .midbar-text .col2, .midbar-text .col3, .midbar-text .col4, .midbar-text .col5, .midbar-text .col6 {
         flex: 1;
         display: inline-block;
         text-align: center;
@@ -644,8 +644,9 @@
 
     .section4{
         margin-bottom: 30px;
-        margin-top: 30px;
+        margin-top: 80px;
     }
+
 
 
 
@@ -772,7 +773,7 @@
     }
 
     .section5{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 
     .section6{

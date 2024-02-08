@@ -106,17 +106,23 @@
 }
 
 .midbar{
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
-    margin-bottom: 0px;
-    padding: 0 20%;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    width: 1700px;
+    width: 1170px;
+    background-color: #f7f7f7;
+    margin: auto;
     
+}
 
+.midbar-text{
+    position: relative;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    min-height: 1px;
+    flex: 0 0 auto;
+    flex-basis: auto;
+    width: calc(50% - 5rem);
+    margin-top: 0;
+    padding-top: 50px;
+    margin-bottom: 0;
 }
 
 

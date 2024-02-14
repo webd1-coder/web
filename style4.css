@@ -159,26 +159,26 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 400px;
+    left: 450px;
     top: 507px;
     z-index: 600;
     height: 45px;
 }
 
 .fisheriesBtn button:hover{
-    background-color: #0071C5;
+    background-color: #005391;
 }
 
 .envBtn button:hover{
-    background-color: #545AA7;
+    background-color: #005391;
 }
 
 .researchBtn button:hover{
-    background-color: #005A9C;
+    background-color: #005391;
 }
 
 .electBtn button:hover{
-    background-color: #446CCF;
+    background-color: #005391;
 }
 
 .envBtn button{
@@ -209,7 +209,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 690px;
+    left: 780px;
     top: 507px;
     z-index: 13;
     height: 45px;
@@ -221,7 +221,7 @@ section{
     box-sizing: border-box;
     color: white;
     white-space: nowrap;
-    width: 370px;
+    width: 250px;
     height: 54px;
     min-height: 0px;
     min-width: 0px;
@@ -243,7 +243,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 930px;
+    left: 1000px;
     top: 507px;
     z-index: 16;    
     height: 45px;
@@ -277,7 +277,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1260px;
+    left: 1200px;
     top: 507px;
     z-index: 14 ;
     height: 45px;

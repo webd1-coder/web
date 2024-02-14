@@ -329,8 +329,8 @@ section{
 
 
 .service-description{
-    width: 55%; /* Adjust the width as needed */
-    margin: 0 425px; /* This will center your text block */
+    width: 65%; /* Adjust the width as needed */
+    margin: 0 350px; /* This will center your text block */
     padding: 20px; /* This adds some space inside the container */
     text-align: left;
     z-index: -1;

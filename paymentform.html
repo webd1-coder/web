@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A.I.S., Inc. | Payment</title>
+        <link rel="stylesheet" href="paymentcss.css">
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;800;900&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+        <!--Boxicons-->
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    
+        <script type="text/javascript" src="script.js"></script>
+        <script type="text/javascript" src="popup.js"></script>
+    </head>
+    <header class="header">
+        <img src="images/logo.png" alt="" width="85" onclick="window.location.href = 'homepageV4.html';" style="cursor: pointer;"/>
+        <div class="navigationbar">
+            <ul>
+                <li><a href="about.html">Who We Are</a></li>
+                <div class="dropdown">
+                <li><a class="dropbtn">What We Do</a></li>
+                <div class="dropdown-content">
+                    <a href="Service3_FMO.html" style="margin: 0; color: white;">Fisheries</a>
+                    <a href="Service2_ENV_MIT.html" style="margin: 0; color: white;"">Environmental Monitoring</a>
+                    <a href="Service1_SRTS.html" style="margin: 0; color: white;"">Scientific Research & Technical Services</a>
+                    <a href="Service4_ELE_MON.html" style="margin: 0; color: white;"">Electronic Monitoring</a>
+                </div>
+                </div>
+                <li><a href="contracts.html">Contracts</a></li>
+                <li><a href="careers.html">Careers</a></li>
+                <li><a href="psotraining.html">PSO Training</a></li>
+                <li><a href="newspage.html">News</a></li>
+                <li><a href="locations.html">Locations</a></li>
+            </ul>
+        </div>
+        <div class="search-btn">
+    
+            <a href="https://www.facebook.com/profile.php?id=100093011370566" style="margin-right: 10px; color: whitesmoke; margin-bottom: 5px;"><i class="fab fa-facebook-f" style="color: #1877f2;"></i></a></li>
+             <a href="http://www.instagram.com/a.i.s._inc" style="margin-right: 10px; color: whitesmoke;"><img src="images/Instagram_icon.png.webp" width="16" height="16"></a></li>
+             <a href="https://www.linkedin.com/company/a-i-s--observers-inc-/" style="margin-right: 10px; color: whitesmoke;"><i class="fab fa-linkedin-in" style="color: #0A66C2;"></i></a> </li>
+            <div class="bx bx-search" id="search-icon"></div>
+        </div>
+    </header>
+
+<body>
+    <h3>Payment Form</h3>
+    <div class="paymentcontainer">
+        <form action="/formlogs.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter first name">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter last name">
+
+            <label for="addr">Address</label>
+            <input type="text" id="addr" name="address" placeholder="Enter address">
+
+            <label for="city">City</label>
+            <input type="text" id="city" name="uscity" placeholder="Enter city">
+
+            <label for="state">State</label>
+            <select id="country" name="country">
+                <option value="AL">Alabama</option>
+	<option value="AK">Alaska</option>
+	<option value="AZ">Arizona</option>
+	<option value="AR">Arkansas</option>
+	<option value="CA">California</option>
+	<option value="CO">Colorado</option>
+	<option value="CT">Connecticut</option>
+	<option value="DE">Delaware</option>
+	<option value="DC">District Of Columbia</option>
+	<option value="FL">Florida</option>
+	<option value="GA">Georgia</option>
+	<option value="HI">Hawaii</option>
+	<option value="ID">Idaho</option>
+	<option value="IL">Illinois</option>
+	<option value="IN">Indiana</option>
+	<option value="IA">Iowa</option>
+	<option value="KS">Kansas</option>
+	<option value="KY">Kentucky</option>
+	<option value="LA">Louisiana</option>
+	<option value="ME">Maine</option>
+	<option value="MD">Maryland</option>
+	<option value="MA">Massachusetts</option>
+	<option value="MI">Michigan</option>
+	<option value="MN">Minnesota</option>
+	<option value="MS">Mississippi</option>
+	<option value="MO">Missouri</option>
+	<option value="MT">Montana</option>
+	<option value="NE">Nebraska</option>
+	<option value="NV">Nevada</option>
+	<option value="NH">New Hampshire</option>
+	<option value="NJ">New Jersey</option>
+	<option value="NM">New Mexico</option>
+	<option value="NY">New York</option>
+	<option value="NC">North Carolina</option>
+	<option value="ND">North Dakota</option>
+	<option value="OH">Ohio</option>
+	<option value="OK">Oklahoma</option>
+	<option value="OR">Oregon</option>
+	<option value="PA">Pennsylvania</option>
+	<option value="RI">Rhode Island</option>
+	<option value="SC">South Carolina</option>
+	<option value="SD">South Dakota</option>
+	<option value="TN">Tennessee</option>
+	<option value="TX">Texas</option>
+	<option value="UT">Utah</option>
+	<option value="VT">Vermont</option>
+	<option value="VA">Virginia</option>
+	<option value="WA">Washington</option>
+	<option value="WV">West Virginia</option>
+	<option value="WI">Wisconsin</option>
+	<option value="WY">Wyoming</option>
+            </select>
+
+            <label for="zip">Zip</label>
+            <input type="text" id="zip" name="zipcode" placeholder="Enter zip code">
+
+            <label for="email">E-mail</label>
+            <input type="text" id="email" name="emailaddr" placeholder="Enter e-mail">
+
+            <label for="num">Phone</label>
+            <input type="text" id="num" name="number" placeholder="Enter phone number">
+
+            <label for="train">Training Session</label>
+            <select id="train" name="trainingsession">
+                <option value="1st">February 21-23, 2024</option>
+                <option value="2nd">March 20-22, 2024</option>
+                <option value="3rd">November 19-21, 2024</option>
+                </select>
+
+                <label for="reason">Reason for Training</label>
+                <select id="reason" name="trainingreason">
+                    <option value="pursue">Pursue a career as a PSO</option>
+                    <option value="advance">Advance career as an existing PSO</option>
+                    <option value="gain">Gaining new skills and certifications</option>
+                    <option value="curr">Current employer requires</option>
+                    <option value="professional">Professional Development</option>
+                    </select>
+                <input type="submit" value="Submit">
+        </form>
+
+
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+             
+            <!-- Identify your business so that you can collect the payments. -->
+             <input type="hidden" name="business" value="sb-zn7jk2845408_api1.business.example.com"> 
+             <!-- Specify a Buy Now button. --> 
+             <input type="hidden" name="cmd" value="_xclick">
+              <!-- Specify details about the item that buyers will purchase. -->
+               <input type="hidden" name="item_name" value="PSO Training">
+                <input type="hidden" name="amount" value="9.99">
+                 <input type="hidden" name="currency_code" value="USD">
+                  <!-- Display the payment button. -->
+                   <input type="image" name="submit" border="0" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="Buy Now">
+                    <img alt="" border="0" width="1" height="1" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" >
+                 </form>
+    </div>
+</body>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col" style="margin-left: -150px; margin-right: 30px;">
+                    <img src="images/logo.png" width="50" height="50" style="display: block; margin-left: auto; margin-right: auto;">
+                    <p style="font-size: 12px; display: inline-block; white-space: nowrap; color: white; font-weight: bold; letter-spacing: .035em; line-height: 1.25em; margin-bottom: 10px;">Corporate Headquarters</p>
+                    <p style="margin: 0px; margin-top: -5px; font-size: 12px; line-height: 1.25em; color: #bbbbbb;">
+                        540 Hawthorn Street
+                        <br>
+                        North Dartmouth, MA 02747
+                        <br>
+                        Phone: 508.990.9054
+                        <br>
+                        Fax: 508.990.9055
+                    </p>
+                    <p style="font-size: 12px; line-height: 1.25em; margin-top: 20px; font-weight: 800; color: whitesmoke;">Follow us on:
+                    <br>
+                    <br>
+                    </p>
+                    <div class="social-links">          
+                        <ul>
+                            <li><a href="https://www.facebook.com/profile.php?id=100093011370566"><i class="fab fa-facebook-f" style="color: #1877f2;"></i></a></li>
+                            <li> <a href="http://www.instagram.com/a.i.s._inc"><img src="images/Instagram_icon.png.webp" width="16" height="16"></a></li>
+                            <li> <a href="https://www.linkedin.com/company/a-i-s--observers-inc-/"><i class="fab fa-linkedin-in" style="color: #0A66C2;"></i></a> </li>   
+                        </ul> 
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="about.html">Company Overview</a></li>
+                        <li><a href="about.html">NAICS Codes</a></li>
+                        <li><a href="about.html">Leadership</a></li>
+                        <li><a href="about.html">Customers</a></li>
+                        <li><a href="about.html">Memberships/Affiliations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="Service3_FMO.html">Fisheries</a></li>
+                        <li><a href="Service2_ENV_MIT.html">Environmental Monitoring</a></li>
+                        <li><a href="Service1_SRTS.html">Scientific Research & Technical Services</a></li>
+                        <li><a href="Service4_ELE_MON.html">Electronic Monitoring</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contracts</h4>
+                    <ul>
+                        <li><a href="contracts.html">ProTech Fisheries Domain ID/IQ</a></li>
+                        <li><a href="contracts.html">GSA Schedule</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Careers</h4>
+                    <ul>
+                        <li><a href="careers.html">Your Future Is Here</a></li>
+                        <li><a href="careers.html">Why Become an Offshore Marine Biologist/Fishery Observer</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="white-space: nowrap;">PSO Training</h4>
+                    <ul>
+                        <li><a href="psotraining.html">Learn More</a></li>
+                        <li><a href="psotraining.html">Training Portal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>News</h4>
+                    <ul>
+                        <li><a href="newspage.html">Press Release</a></li>
+                        <li><a href="newspage.html">Recruiting Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Locations</h4>
+                    <ul style="color: #bbbbbb; white-space: nowrap; font-size: 15px;">
+                        <li><a href="locations.html">Dartmouth, MA</a></li>
+                        <li><a href="locations.html">Anchorage, AK</a></li>
+                        <li><a href="locations.html">Seattle, WA</a></li>
+                        <li><a href="locations.html">Toms River, NJ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </html>

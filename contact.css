@@ -1,0 +1,225 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --bg-color: #f7f7f7;
+    --text-color: whitesmoke;
+    --main-color: #35ad85;
+    --big-font: 5rem;
+    --p-font: 1.1rem;
+    --mid-font: 2.5rem;
+}
+
+
+.dropbtn{
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+    padding: 0; 
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #4C516D; /* #4C516D */
+    min-width: 250px; /* change this to 160 */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 0;
+}
+
+.dropdown-content a{
+    color: whitesmoke;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.1rem;
+    min-width: 100px;
+    margin: 0;
+}
+
+.dropdown-content a:hover {background-color: #35ad85; color: whitesmoke;}
+
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15%;
+    transition: all ease .45s;
+    background-color: rgba(33, 33, 38, 0.5);
+    --text-color: white;
+}
+
+.active{
+    background-color: #24262b;
+}
+
+.logo{
+    color: var(--text-color);
+    font-size: 41px;
+    font-weight: 600;
+}
+
+.logo span{
+    color: var(--main-color);
+}
+
+
+.navigationbar{
+    display: flex;
+}
+
+.navigationbar ul{
+    display: flex;
+}
+
+.navigationbar a{
+    font-size: var(--p-font);
+    font-weight: 500;
+    color: var(--text-color);
+    margin: 0 25px;
+    transition: all ease .50s;
+}
+
+.navigationbar a:hover{
+    color: var(--main-color);
+}
+
+.search-btn{
+    padding: 10px 20px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
+    --text-color: black;
+    box-sizing: border-box;
+}
+
+.bg-blue-gradient{
+    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
+    width: 100%;
+    height: 250px;
+}
+
+.headercontainer{
+    width: 100%;
+    height: 100vh;
+}
+
+.banner{
+    width: 100%;
+    height: 45vh;
+    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
+    background-size: cover;
+    background-position: 69%;
+}
+
+.bannertext{
+    padding-top: 100px;
+    margin-left: 100px;
+    color: white;
+}
+
+.bannertext p{
+    font-weight: bold;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.bannertext h1{
+    font-size: 64px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 32px;
+}
+
+
+.container{
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+
+
+.footer-col h4{
+    font-size: 18px;
+    color: whitesmoke;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    /*width here */
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+}
+
+.footer-col a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+}
+
+
+
+
+.footer-col a:hover{
+    color: #35ad85;
+    padding-left: 8px;
+}
+
+.footer{
+    background-color: #24262b;
+    padding: 25px 15%;
+    overflow: hidden;
+    width: 100%;
+}
+
+.footer-col .social-links li{
+    float: left;
+    padding: 0x;
+    margin: 0px 10px 10px 0px;
+    list-style: none;
+ }

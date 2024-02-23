@@ -11,7 +11,7 @@
 :root {
     --bg-color: #f7f7f7;
     --text-color: whitesmoke;
-    --main-color: #35ad85;
+    --main-color: #005391;
     --big-font: 5rem;
     --p-font: 1.1rem;
     --mid-font: 2.5rem;
@@ -111,7 +111,7 @@
     margin: 0;
 }
 
-.dropdown-content a:hover {background-color: #35ad85; color: whitesmoke;}
+.dropdown-content a:hover {background-color: #005391; color: whitesmoke;}
 
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -159,7 +159,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 450px;
+    left: 400px;
     top: 507px;
     z-index: 600;
     height: 45px;
@@ -209,7 +209,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 780px;
+    left: 730px;
     top: 507px;
     z-index: 13;
     height: 45px;
@@ -277,7 +277,7 @@ section{
     position: absolute;
     display: block;
     pointer-events: auto;
-    left: 1200px;
+    left: 1250px;
     top: 507px;
     z-index: 14 ;
     height: 45px;

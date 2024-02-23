@@ -11,7 +11,7 @@
 :root {
     --bg-color: #f7f7f7;
     --text-color: whitesmoke;
-    --main-color: #35ad85;
+    --main-color: #005391;
     --big-font: 5rem;
     --p-font: 1.1rem;
     --mid-font: 2.5rem;
@@ -51,7 +51,7 @@
     margin: 0;
 }
 
-.dropdown-content a:hover {background-color: #35ad85; color: whitesmoke;}
+.dropdown-content a:hover {background-color: #005391; color: whitesmoke;}
 
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -123,15 +123,16 @@ body{
     box-sizing: border-box;
 }
 
-.bg-blue-gradient{
-    background: linear-gradient(90deg, rgba(4,44,75,1) 0%, rgba(69,104,177,1) 100%);
-    width: 100%;
-    height: 250px;
+h3{
+    margin-bottom: 24px;
+    color: #35ad85;
+    font-size: 48px;
+    line-height: 58px;
 }
 
-.headercontainer{
-    width: 100%;
-    height: 100vh;
+
+.bannercontainer {
+   position: relative;
 }
 
 .banner{
@@ -143,23 +144,133 @@ body{
 }
 
 .bannertext{
-    padding-top: 100px;
-    margin-left: 100px;
+    position: absolute;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
     color: white;
 }
 
 .bannertext p{
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1vw;
     font-weight: normal;
 }
 
 .bannertext h1{
-    font-size: 64px;
+    font-size: 3vw;
     text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 32px;
+    margin-bottom: 2vw;
 }
+
+@media (max-width: 768px) {
+    .bannertext {
+        padding-top: 20%;
+    }
+
+    .bannertext p {
+        font-size: 3vw;
+    }
+
+    .bannertext h1 {
+        font-size: 6vw;
+        margin-bottom: 4vw;
+    }
+}
+
+.hidden{
+    display: none;
+}
+
+hr{
+    box-sizing: content-box;
+    height: 0;
+    margin: 5rem 0;
+    border-top: 0.5px solid #cccccc;
+}
+
+#faq p{
+    margin-bottom: 24px;
+    font-size: 16px;
+}
+
+#faq{
+    width: 70%;
+    margin: 0 auto;
+}
+.contact-form-container {
+    width: 70%;
+    margin: 0 auto;
+  }
+  
+  form {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  select{
+    width: 25%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  textarea {
+    resize: vertical;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .department-fields {
+    transition: opacity 0.5s;
+  }
+  
+  .department-fields.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+
+
+
 
 
 .container{

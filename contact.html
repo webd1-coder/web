@@ -18,6 +18,7 @@
     
         <script type="text/javascript" src="script.js"></script>
         <script type="text/javascript" src="popup.js"></script>
+        <script type="text/javascript" src="contactjs.js"></script>
     </head>
     <header class="header">
         <img src="images/logo.png" alt="" width="85" onclick="window.location.href = 'homepageV4.html';" style="cursor: pointer;"/>
@@ -57,6 +58,98 @@
             </div>
         </div>
     </div>
+
+
+    <div class="contact-form-container">
+        <form id="contact-form" method="post" action="#">
+            <div class="form-group">
+                <label for="department">Select Department:</label>
+                <select id="department" name="department">
+                    <option value="">Select</option>
+                    <option value="business-inquiry">Business Inquiry</option>
+                    <option value="career-question">Career Question</option>
+                    <option value="hr-support">HR Support</option>
+                    <option value="media-inquiry">Media Inquiry</option>
+                </select>
+            </div>
+    
+            <!-- Business Inquiry -->
+            <div id="business-inquiry-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="business-inquiry-type">Select Inquiry Type:</label>
+                    <select id="business-inquiry-type" name="business-inquiry-type">
+                        <option value="">Select</option>
+                        <option value="1">Fisheries</option>
+                        <option value="2">Electronic Monitoring</option>
+                        <option value="3">Environmental Mitigation</option>
+                        <option value="4">Research</option>
+                    </select>
+                </div>
+                <div id="business-inquiry-1-fields" class="department-fields hidden">
+                    <div class="form-group">
+                        <label for="business-inquiry-1">Fisheries Inquiry:</label>
+                        <textarea id="business-inquiry-1" name="business-inquiry-1" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div id="business-inquiry-2-fields" class="department-fields hidden">
+                    <div class="form-group">
+                        <label for="business-inquiry-2">Electronic Monitoring Inquiry:</label>
+                        <textarea id="business-inquiry-2" name="business-inquiry-2" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div id="business-inquiry-3-fields" class="department-fields hidden">
+                    <div class="form-group">
+                        <label for="business-inquiry-3">Environmental Mitigation Inquiry:</label>
+                        <textarea id="business-inquiry-3" name="business-inquiry-3" rows="4" required></textarea>
+                    </div>
+                </div>
+                <div id="business-inquiry-4-fields" class="department-fields hidden">
+                    <div class="form-group">
+                        <label for="business-inquiry-4">Research Inquiry:</label>
+                        <textarea id="business-inquiry-4" name="business-inquiry-4" rows="4" required></textarea>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Career Question -->
+            <div id="career-question-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="career-question">Career Question:</label>
+                    <textarea id="career-question" name="career-question" rows="4" required></textarea>
+                </div>
+            </div>
+    
+            <!-- HR Support -->
+            <div id="hr-support-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="hr-support-issue">HR Support Issue:</label>
+                    <textarea id="hr-support-issue" name="hr-support-issue" rows="4" required></textarea>
+                </div>
+            </div>
+    
+            <!-- Media Inquiry -->
+            <div id="media-inquiry-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="media-inquiry-question">Media Inquiry Question:</label>
+                    <textarea id="media-inquiry-question" name="media-inquiry-question" rows="4" required></textarea>
+                </div>
+            </div>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+
+    
+    
+    
+      
+
+
+
+
+
+
 
 
 

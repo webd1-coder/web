@@ -11,7 +11,7 @@
     :root {
         --bg-color: #f7f7f7;
         --text-color: whitesmoke;
-        --main-color: #35ad85;
+        --main-color: #005391;
         --big-font: 5rem;
         --p-font: 1.1rem;
         --mid-font: 2.5rem;
@@ -104,7 +104,7 @@
         margin: 0;
     }
     
-    .dropdown-content a:hover {background-color: #35ad85; color: white;}
+    .dropdown-content a:hover {background-color: #005391; color: white;}
     
     
     .dropdown:hover .dropdown-content {display: block;}

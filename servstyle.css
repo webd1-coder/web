@@ -12,7 +12,7 @@
 :root {
     --bg-color: #f7f7f7;
     --text-color: whitesmoke;
-    --main-color: #35ad85;
+    --main-color: #005391;
     --big-font: 5rem;
     --p-font: 1.1rem;
     --mid-font: 2.5rem;
@@ -71,7 +71,7 @@
     margin: 0;
 }
 
-.dropdown-content a:hover {background-color: #35ad85; color: whitesmoke;}
+.dropdown-content a:hover {background-color: #005391; color: whitesmoke;}
 
 
 .dropdown:hover .dropdown-content {display: block;}
@@ -222,7 +222,7 @@ body{
     min-height: 1px;
     flex: 0 0 auto;
     flex-basis: auto;
-   height: 325px;
+   height: 400px;
     width: 520px;
     margin-top: 0;
     margin-bottom: 0;
@@ -250,7 +250,7 @@ body{
     min-height: 1px;
     flex: 0 0 auto;
     flex-basis: auto;
-   height: 325px;
+   height: 400px;
     width: 520px;
     margin-top: 0;
     margin-bottom: 0;

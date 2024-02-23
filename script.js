@@ -32,7 +32,7 @@ function plusDivs(n) {
 showDivs(slideIndex += n);
 }
 
-// Example using window.scrollY to determine scroll position
+
 window.addEventListener('scroll', function () {
   var header = document.querySelector('.header');
   if (window.scrollY > 100) {
@@ -68,10 +68,6 @@ function showDivs(n) {
     }
   }
 }
-
-
-
-
 
 function animateCountingWithCommas(element, target, duration) {
   let start = 0;

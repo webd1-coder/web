@@ -9,7 +9,7 @@
 :root {
     --bg-color: whitesmoke;
     --text-color: whitesmoke;
-    --main-color: #35ad85;
+    --main-color: #005391;
     --big-font: 5rem;
     --p-font: 1.1rem;
     --mid-font: 2.5rem;
@@ -67,7 +67,7 @@ header ul{
     margin: 0;
 }
 
-.dropdown-content a:hover {background-color: #35ad85; color: whitesmoke;}
+.dropdown-content a:hover {background-color: #005391; color: whitesmoke;}
 
 
 .dropdown:hover .dropdown-content {display: block;}

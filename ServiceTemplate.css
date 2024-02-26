@@ -355,6 +355,14 @@ section{
     line-height: 1.8em;
 }
 
+.service-description ul{
+    margin-left: 45px;
+}
+
+.service-description li{
+    padding-bottom: 10px;
+}
+
 .home-text p{
     font-size: var(--mid-font);
     font-weight: 400;

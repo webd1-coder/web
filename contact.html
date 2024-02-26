@@ -59,24 +59,25 @@
         </div>
     </div>
 
-
     <div class="contact-form-container">
         <form id="contact-form" method="post" action="#">
             <div class="form-group">
-                <label for="department">Select Department:</label>
+                <label for="department" style="margin-right: 15px; color: #4c4c4c; font-weight: lighter; font-size: 20px;">Type of Request</label>
                 <select id="department" name="department">
                     <option value="">Select</option>
                     <option value="business-inquiry">Business Inquiry</option>
                     <option value="career-question">Career Question</option>
                     <option value="hr-support">HR Support</option>
+                    <option value="industry-hotline">Industry/Observer Hotline</option>
                     <option value="media-inquiry">Media Inquiry</option>
+                    <option value="pso-training">PSO Training</option>
                 </select>
             </div>
     
             <!-- Business Inquiry -->
             <div id="business-inquiry-fields" class="department-fields hidden">
                 <div class="form-group">
-                    <label for="business-inquiry-type">Select Inquiry Type:</label>
+                    <label for="business-inquiry-type" style="margin-right: 15px; color: #4c4c4c; font-weight: lighter; font-size: 15px;">Business Inquiry Type</label>
                     <select id="business-inquiry-type" name="business-inquiry-type">
                         <option value="">Select</option>
                         <option value="1">Fisheries</option>
@@ -87,26 +88,66 @@
                 </div>
                 <div id="business-inquiry-1-fields" class="department-fields hidden">
                     <div class="form-group">
-                        <label for="business-inquiry-1">Fisheries Inquiry:</label>
-                        <textarea id="business-inquiry-1" name="business-inquiry-1" rows="4" required></textarea>
+                        <label for="first-name" class="center-label">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" class="short-input" required>
+                        <label for="last-name" class="center-label">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="short-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="center-label">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="center-label">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                 </div>
                 <div id="business-inquiry-2-fields" class="department-fields hidden">
                     <div class="form-group">
-                        <label for="business-inquiry-2">Electronic Monitoring Inquiry:</label>
-                        <textarea id="business-inquiry-2" name="business-inquiry-2" rows="4" required></textarea>
+                        <label for="first-name" class="center-label">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" class="short-input" required>
+                        <label for="last-name" class="center-label">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="short-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="center-label">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="center-label">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                 </div>
                 <div id="business-inquiry-3-fields" class="department-fields hidden">
                     <div class="form-group">
-                        <label for="business-inquiry-3">Environmental Mitigation Inquiry:</label>
-                        <textarea id="business-inquiry-3" name="business-inquiry-3" rows="4" required></textarea>
+                        <label for="first-name" class="center-label">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" class="short-input" required>
+                        <label for="last-name" class="center-label">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="short-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="center-label">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="center-label">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                 </div>
                 <div id="business-inquiry-4-fields" class="department-fields hidden">
                     <div class="form-group">
-                        <label for="business-inquiry-4">Research Inquiry:</label>
-                        <textarea id="business-inquiry-4" name="business-inquiry-4" rows="4" required></textarea>
+                        <label for="first-name" class="center-label">First Name:</label>
+                        <input type="text" id="first-name" name="first-name" class="short-input" required>
+                        <label for="last-name" class="center-label">Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" class="short-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="center-label">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="center-label">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
                     </div>
                 </div>
             </div>
@@ -114,30 +155,127 @@
             <!-- Career Question -->
             <div id="career-question-fields" class="department-fields hidden">
                 <div class="form-group">
-                    <label for="career-question">Career Question:</label>
-                    <textarea id="career-question" name="career-question" rows="4" required></textarea>
+                    <label for="first-name" class="center-label">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="short-input" required>
+                    <label for="last-name" class="center-label">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="short-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="center-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="center-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
             </div>
     
             <!-- HR Support -->
             <div id="hr-support-fields" class="department-fields hidden">
                 <div class="form-group">
-                    <label for="hr-support-issue">HR Support Issue:</label>
-                    <textarea id="hr-support-issue" name="hr-support-issue" rows="4" required></textarea>
+                    <label for="first-name" class="center-label">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="short-input" required>
+                    <label for="last-name" class="center-label">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="short-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="center-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="center-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <div id="pso-training-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="first-name" class="center-label">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="short-input" required>
+                    <label for="last-name" class="center-label">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="short-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="center-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="center-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+            </div>
+
+            <div id="industry-hotline-fields" class="department-fields hidden">
+                <div class="form-group">
+                    <label for="first-name" class="center-label">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="short-input" required>
+                    <label for="last-name" class="center-label">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="short-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="center-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="center-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
             </div>
     
             <!-- Media Inquiry -->
             <div id="media-inquiry-fields" class="department-fields hidden">
                 <div class="form-group">
-                    <label for="media-inquiry-question">Media Inquiry Question:</label>
-                    <textarea id="media-inquiry-question" name="media-inquiry-question" rows="4" required></textarea>
+                    <label for="first-name" class="center-label">First Name:</label>
+                    <input type="text" id="first-name" name="first-name" class="short-input" required>
+                    <label for="last-name" class="center-label">Last Name:</label>
+                    <input type="text" id="last-name" name="last-name" class="short-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" class="center-label">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" class="center-label">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
                 </div>
             </div>
             
             <button type="submit">Submit</button>
         </form>
     </div>
+    
+    <div id="faq-section">
+        <hr>
+        <div id="text-box">
+            <h3>Having technical issues applying for a job?</h3>
+            <p>If you are having technical issues applying for a position on our career site, use the drop-down list above and choose <b>Career Question</b> to request help.</p>
+        </div>
+        <hr>
+        <div id="text-box">
+            <h3>Are you an employee and need IT help?</h3>
+            <p>The AIS Service Desk is a centralized support center for computing resources and information needs for employees. View the information below to <b>learn how to get help online or call the help desk.</b></p>
+        </div>
+        <hr>
+        <div id="text-box">
+            <h3>Need assistance due to a disability or limited English proficiency?</h3>
+            <p>If you have a disability and need help using our site, use the drop-down list above and choose <b>Accommodation Request</b> to request help.</p>
+            <br>
+            <p>AIS ensures nondiscrimination in all programs and activities in accordance with the Title VI of the Civil Rights Act of 1964. If you need more information or special assistance for persons with disabilities or limited English proficiency, contact the <b>AIS Employee Services. </b> </p>
+        </div>
+        <hr>
+        <div id="text-box">
+            <h3>Do you have a question about AIS Health Services?</h3>
+            <p>If you need assistance or wish to request information, please reach out to a member of our team by phone at xxx-xxx-xxxx. Alternatively, you can submit your inquiry online through our <b>contact form</b>. We’re here to help!</p>
+        </div>
+        <hr>
+        <div id="text-box">
+            <h3>Do you need proof of employment and/or income?</h3>
+            <p>Current and former AIS employees can provide proof of employment and income with secure, 24/7 access through a toll-free number and website.</p>
+        </div>
+        <br>
+        <br>
+    </div>
+    
     
 
     

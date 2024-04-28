@@ -114,7 +114,7 @@ body{
     background: var(--bg-color);
     color: whitesmoke;
     overflow-x: hidden;
-    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 150px;
 }
 
 section{
@@ -223,7 +223,7 @@ section{
 .home{
     position: relative;
     width: 100%;
-    height:75vh; /*prev 100 */
+    height:75vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -435,7 +435,7 @@ font-size: 12px;
     min-height: 1px;
 }
 
-/*careers section*/
+
 .column .title{
     line-height: 1.5rem;
     margin-bottom: 0;
@@ -516,7 +516,7 @@ font-size: 12px;
     padding-right: 10px;
 }
 
-/*other */
+
 
 
 .sidecolumn:after {

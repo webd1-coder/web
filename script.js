@@ -2,17 +2,17 @@ $(window).on("load",function() {
   $(window).scroll(function() {
     var windowBottom = $(this).scrollTop() + $(this).innerHeight();
     $(".fade").each(function() {
-      /* Check the location of each desired element */
+     
       var objectBottom = $(this).offset().top + $(this).outerHeight();
       
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+     
+      if (objectBottom < windowBottom) { 
         if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
-      } else { //object goes out of view (scrolling up)
+      } else { 
         if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
       }
     });
-  }).scroll(); //invoke scroll-handler on page-load
+  }).scroll(); 
 });
 
 
@@ -49,21 +49,21 @@ function showDivs(n) {
   if (n >= x.length) { slideIndex = 0; }
   if (n < 0) { slideIndex = x.length - 3; }
 
-  // Reset styles for all images
+  
   for (i = 0; i < x.length; i++) {
-    x[i].style.opacity = "0"; // Set opacity for all images to 0
+    x[i].style.opacity = "0"; 
     x[i].style.display = "none";
   }
 
-  // Display the three images starting from the middle
+  
   for (i = 0; i < 3; i++) {
     let indexToShow = (slideIndex + i) % x.length;
     x[indexToShow].style.display = "inline-block";
     if (i === 1) {
-      // Highlight the center image
+      
       x[indexToShow].style.opacity = "1";
     } else {
-      // Dim the outer images
+      
       x[indexToShow].style.opacity = "0.2";
     }
   }
@@ -71,31 +71,31 @@ function showDivs(n) {
 
 function animateCountingWithCommas(element, target, duration) {
   let start = 0;
-  const frames = 400; // Number of frames per second
+  const frames = 400; 
   const interval = duration / frames;
-  const step = (target - start) / (frames * (duration / 1000)); // Calculate dynamic step size
+  const step = (target - start) / (frames * (duration / 1000)); 
 
   const animation = setInterval(function () {
       start += step;
-      element.textContent = Math.floor(start).toLocaleString(); // Add commas
+      element.textContent = Math.floor(start).toLocaleString(); 
       if (start >= target) {
-          element.textContent = target.toLocaleString(); // Add commas
+          element.textContent = target.toLocaleString(); 
           clearInterval(animation);
       }
   }, interval);
 }
 
 
-// Trigger counting animation with commas
+
 function startCountingAnimation() {
 const elements = document.querySelectorAll('.counting');
 elements.forEach(function(element) {
     const target = parseInt(element.getAttribute('data-count'));
-    animateCountingWithCommas(element, target, 500); // Adjust the duration for a faster animation
+    animateCountingWithCommas(element, target, 500); 
 });
 }
 
-// Start counting animation on webpage load
+
 document.addEventListener('DOMContentLoaded', function() {
 startCountingAnimation();
 showDivs(slideIndex);
@@ -145,27 +145,27 @@ function startCountingAnimationIfInViewport() {
   elements.forEach(function(element) {
       const target = parseInt(element.getAttribute('data-count'));
       if (isElementInViewport(element) && element.textContent === "0") {
-          animateCountingWithCommas(element, target, 500); // Adjust the duration for a faster animation
+          animateCountingWithCommas(element, target, 500); 
       } else if (!isElementInViewport(element)) {
-          element.textContent = "0"; // Reset the count if the element is out of view
+          element.textContent = "0"; 
       }
   });
 }
 
-// Trigger counting animation when scrolling
+
 document.addEventListener('scroll', function() {
   startCountingAnimationIfInViewport();
 });
 
-// Trigger counting animation on webpage load
+
 document.addEventListener('DOMContentLoaded', function() {
   startCountingAnimation();
   showDivs(slideIndex);
 
-// Check if elements are in viewport on page load
+
 startCountingAnimationIfInViewport();
 
-// Automatically advance the slides every 3 seconds
+
 setInterval(nextSlide, 2000);  
 
 function nextSlide() {

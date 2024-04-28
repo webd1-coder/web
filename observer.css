@@ -33,8 +33,8 @@
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #4C516D; /* #4C516D */
-    min-width: 250px; /* change this to 160 */
+    background-color: #4C516D;
+    min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0;
@@ -117,7 +117,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 105px;
     --text-color: black;
     background: linear-gradient(-180deg, #037aa0 20%, #00335b 80%);
 }
@@ -143,7 +143,7 @@ body{
 }
 
 .home-text p {
-    top: 50%; /* Adjust the percentage based on your preference */
+    top: 50%;
     left: 18%;
     font-size: 45px;
     transform: translate(-50%, -50%);
@@ -249,7 +249,7 @@ body{
     margin-bottom: 30px;
     font-weight: 500;
     position: relative;
-    /*width here */
+   
 }
 
 .footer-col ul li:not(:last-child){

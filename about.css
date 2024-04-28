@@ -17,36 +17,6 @@
         --mid-font: 2.5rem;
     }
 
-
-    /* Your existing styles */
-
-    /* Media query for screens smaller than 768 pixels (adjust the breakpoint as needed) */
-    @media only screen and (max-width: 768px) {
-        /* Adjustments for mobile view */
-
-        /* Reset the width for the whole page */
-        body {
-            width: 100%;
-        }
-
-        /* Center the header */
-        .header {
-            text-align: center;
-        }
-
-        /* Adjustments for the navigation bar */
-        .navigationbar {
-            display: block;
-            text-align: center;
-            margin-top: 10px; /* Adjust as needed */
-        }
-
-
-    }
-
-
-
-
     html{
         overflow-x: hidden;
     }
@@ -86,8 +56,8 @@
     .dropdown-content{
         display: none;
         position: absolute;
-        background-color: #4C516D; /* #4C516D */
-        min-width: 250px; /* change this to 160 */
+        background-color: #4C516D; 
+        min-width: 250px; 
         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
         z-index: 1;
         padding: 0;
@@ -117,7 +87,6 @@
         display: flex;
     }
 
-    /* Existing styles for .popup and .overlay (if you have them) */
 
     .popup {
         display: none;
@@ -145,14 +114,14 @@
         z-index: 9998;
     }
 
-    /* Additional styles for the popup content */
+
     .popup p {
         margin: 0;
         color: #333333;
         font-size: 14px;
     }
 
-    /* Add more specific styles as needed */
+
     
     .navigationbar ul{
         display: flex;
@@ -171,90 +140,21 @@
     }
 
     .search-btn{
-        padding: 8px 15px; /*10px 20px orig*/
+        padding: 8px 15px;
         border-radius: 100px;
         display: flex;
         align-items: center;
         cursor: pointer;
         align-items: center;
         justify-content: space-between;
-    }
-
-    /* Adjust navigationbar for smaller screens */
-    @media (max-width: 991px) {
-        .header {
-            width: 100vw;
-            padding: 10px 0; /* Adjust as needed */
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            overflow-x: hidden;
-        }
-
-        .navigationbar {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-        }
-
-        .navigationbar li {
-            margin: 10px 0;
-        }
-
-        .navigationbar a {
-            font-size: 14px;
-            margin: 0 15px;
-            display: block;
-        }
-        
-        .navigationbar ul{
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        }
-
-        .home {
-            height: auto; /* Adjust as needed */
-        }
-
-        .home-text h1,
-        .home-text p {
-            position: static;
-            transform: none;
-            text-align: center;
-        }
-
-        
-
-
-        /* Adjust styles for other sections similarly */
-
-        .maincolumn,
-        .sidecolumn,
-        .midbar,
-        .section1,
-        .section2,
-        .section3,
-        /* Add more sections as needed */
-        .section4,
-        .section5,
-        .footer {
-            width: 100vw;
-            padding: 20px; /* Adjust as needed */
-        }
-
-        /* Add more specific styles for other sections as needed */
-    }
-
-
-    
+    }  
 
 
     body{
         background: var(--bg-color);
         color: var(--text-color);
         overflow-x: hidden;
-        padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
+        padding-top: 105px;
         --text-color: black;
     }
     .home {
@@ -286,7 +186,7 @@
     }
 
     .home-text p {
-        top: 50%; /* Adjust the percentage based on your preference */
+        top: 50%;
         left: 18%;
         font-size: 45px;
         transform: translate(-50%, -50%);
@@ -323,7 +223,7 @@
         margin: 0 25px;
         transition: all ease .50s;
         background-color: whitesmoke;
-        padding: 15px; /* Adds space inside the box */
+        padding: 15px; 
         z-index: 1;
     }
 
@@ -576,7 +476,7 @@
         text-align: center;
         color: #35add8;
         font-size: 35px;
-        margin: 0; /* Remove default margin */
+        margin: 0; 
     }
 
     .midbar-text p {
@@ -585,7 +485,7 @@
         line-height: 1em;
     }
 
-    /* Add a class for the counting animation */
+    
     .counting {
         animation: countUp 2s ease-in-out;
     }
@@ -737,8 +637,8 @@
         position: absolute;
         top: 40%;
         transform: translateY(-50%);
-        background-color: transparent; /* Ocean blue color */
-        color: black; /* White text color */
+        background-color: transparent;
+        color: black; 
         border: none;
         padding: 8px 5px;
         font-size: 16px;
@@ -748,11 +648,11 @@
     }
     
     .leftSlideBtn {
-        left: -20px; /* Adjust this value to move the button outside to the left */
+        left: -20px; 
     }
     
     .rightSlideBtn {
-        right: -20px; /* Adjust this value to move the button outside to the right */
+        right: -20px; 
     }
     
 

@@ -1,4 +1,4 @@
-/* CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,13 +9,13 @@
 body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7; /* Set your desired background color */
+    background-color: #f7f7f7;
     margin: 0;
 }
 
-/* Mobile Header Styles */
+
 .header {
-    background-color: #24262b; /* Set your desired header background color */
+    background-color: #24262b;
     color: white;
     padding: 10px;
     display: flex;
@@ -24,7 +24,7 @@ body {
 }
 
 .logo img {
-    width: 50px; /* Set your desired logo size */
+    width: 50px;
     height: auto;
 }
 
@@ -106,14 +106,14 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service1 .sizing .imglay,
 .service1 .sizing .textlay {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service1 .sizing .imglay img {
@@ -184,22 +184,22 @@ body {
     position: relative;
     height: 100vw;
     width: 100vw;
-    background-color: #eff0f0; /* Adjust background color as needed */
+    background-color: #eff0f0;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service2 .sizing .imglay2,
 .service2 .sizing .textlay2 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service2 .sizing .imglay2 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -216,7 +216,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service2 .sizing .textlay2 .header2 h2 {
@@ -226,7 +226,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -70px; /* Adjust vertical positioning of the header */
+    top: -70px;
 }
 
 .service2 .sizing .textlay2 .paragraph2 p {
@@ -235,7 +235,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 120px; /* Adjust vertical positioning of the paragraph */
+    top: 120px;
     max-width: 100%;
 }
 
@@ -266,19 +266,19 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service3 .sizing .imglay3,
 .service3 .sizing .textlay3 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service3 .sizing .imglay3 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -295,7 +295,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service3 .sizing .textlay3 .header3 h2 {
@@ -305,7 +305,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -85px; /* Adjust vertical positioning of the header */
+    top: -85px;
 }
 
 .service3 .sizing .textlay3 .paragraph3 p {
@@ -314,7 +314,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 120px; /* Adjust vertical positioning of the paragraph */
+    top: 120px;
     max-width: 100%;
 }
 
@@ -325,19 +325,19 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service4 .sizing .imglay4,
 .service4 .sizing .textlay4 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service4 .sizing .imglay4 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -354,7 +354,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service4 .sizing .textlay4 .header4 h2 {
@@ -364,7 +364,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -70px; /* Adjust vertical positioning of the header */
+    top: -70px;
 }
 
 .service4 .sizing .textlay4 .paragraph4 p {
@@ -373,16 +373,16 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 100px; /* Adjust vertical positioning of the paragraph */
+    top: 100px;
     right: 20px;
     max-width: 100%;
 }
 
 .footer {
-    padding: 15px; /* Adjust padding as needed for mobile */
+    padding: 15px;
     text-align: center;
-    background-color: #24262b; /* Set your desired background color */
-    color: #ffffff; /* Set your desired text color */
+    background-color: #24262b;
+    color: #ffffff;
 }
 
 .footer-col {
@@ -392,7 +392,7 @@ body {
 
 .footer-col h4 {
     margin-bottom: 15px;
-    color: whitesmoke; /* Set your desired heading color */
+    color: whitesmoke;
 }
 
 .footer-col ul li {
@@ -404,9 +404,9 @@ body {
 }
 
 .footer-col a {
-    color: #bbbbbb; /* Set your desired link color */
+    color: #bbbbbb;
 }
 
 .footer-col a:hover {
-    color: #35ad85; /* Set your desired link hover color */
+    color: #35ad85;
 }

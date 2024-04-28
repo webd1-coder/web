@@ -54,8 +54,8 @@
 .dropdown-content{
     display: none;
     position: absolute;
-    background-color: #4C516D; /* #4C516D */
-    min-width: 250px; /* change this to 160 */
+    background-color: #4C516D;
+    min-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     padding: 0;
@@ -147,7 +147,7 @@
 }
 
 .home-text p {
-    top: 50%; /* Adjust the percentage based on your preference */
+    top: 50%;
     left: 18%;
     font-size: 45px;
     transform: translate(-50%, -50%);
@@ -165,7 +165,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 105px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 105px;
     --text-color: black;
     width: auto;
     height: auto;
@@ -180,7 +180,7 @@ body{
     min-height: 1px;
     flex: 0 0 auto;
     flex-basis: auto;
-   /* width: calc(50% - 5rem);*/
+  
     height: 325px;
     width: 520px;
     margin-top: 0;
@@ -510,7 +510,7 @@ padding: 10px;
     min-height: 1px;
     flex: 0 0 auto;
     flex-basis: auto;
-   /* width: calc(50% - 5rem);*/
+  
     height: 325px;
     width: 520px;
     margin-top: 0;
@@ -640,10 +640,10 @@ padding: 10px;
     margin: 0px 10px 10px 0px;
  }
 
- /* Adjust service section layout for smaller screens */
+
 @media only screen and (max-width: 768px) {
 
-/* CSS Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -654,13 +654,13 @@ padding: 10px;
 body {
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #f7f7f7; /* Set your desired background color */
+    background-color: #f7f7f7;
     margin: 0;
 }
 
-/* Mobile Header Styles */
+
 .header {
-    background-color: #24262b; /* Set your desired header background color */
+    background-color: #24262b;
     color: white;
     padding: 10px;
     display: flex;
@@ -669,7 +669,7 @@ body {
 }
 
 .logo img {
-    width: 50px; /* Set your desired logo size */
+    width: 50px;
     height: auto;
 }
 
@@ -751,14 +751,14 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service1 .sizing .imglay,
 .service1 .sizing .textlay {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service1 .sizing .imglay img {
@@ -829,22 +829,22 @@ body {
     position: relative;
     height: 100vw;
     width: 100vw;
-    background-color: #eff0f0; /* Adjust background color as needed */
+    background-color: #eff0f0;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service2 .sizing .imglay2,
 .service2 .sizing .textlay2 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service2 .sizing .imglay2 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -861,7 +861,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service2 .sizing .textlay2 .header2 h2 {
@@ -871,7 +871,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -70px; /* Adjust vertical positioning of the header */
+    top: -70px;
 }
 
 .service2 .sizing .textlay2 .paragraph2 p {
@@ -880,7 +880,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 120px; /* Adjust vertical positioning of the paragraph */
+    top: 120px;
     max-width: 100%;
 }
 
@@ -911,19 +911,19 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service3 .sizing .imglay3,
 .service3 .sizing .textlay3 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service3 .sizing .imglay3 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -940,7 +940,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service3 .sizing .textlay3 .header3 h2 {
@@ -950,7 +950,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -85px; /* Adjust vertical positioning of the header */
+    top: -85px;
 }
 
 .service3 .sizing .textlay3 .paragraph3 p {
@@ -959,7 +959,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 120px; /* Adjust vertical positioning of the paragraph */
+    top: 120px;
     max-width: 100%;
 }
 
@@ -970,19 +970,19 @@ body {
     background-color: #f7f7f7;
     margin: auto;
     display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center items horizontally */
+    flex-direction: column;
+    align-items: center;
 }
 
 .service4 .sizing .imglay4,
 .service4 .sizing .textlay4 {
-    width: 100%; /* Make both image and text span the full width */
-    text-align: center; /* Center content within each section */
+    width: 100%;
+    text-align: center;
 }
 
 .service4 .sizing .imglay4 img {
-    height: 150px; /* Adjust image height as needed */
-    width: 300px; /* Adjust image width as needed */
+    height: 150px;
+    width: 300px;
     display: block;
     border-style: none;
 }
@@ -999,7 +999,7 @@ body {
     top: 50%;
     left: 10%;
     transform: translate(0, -50%);
-    max-width: 90%; /* Adjust the maximum width of the text */
+    max-width: 90%;
 }
 
 .service4 .sizing .textlay4 .header4 h2 {
@@ -1009,7 +1009,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: -70px; /* Adjust vertical positioning of the header */
+    top: -70px;
 }
 
 .service4 .sizing .textlay4 .paragraph4 p {
@@ -1018,7 +1018,7 @@ body {
     line-height: 20px;
     text-align: left;
     position: relative;
-    top: 100px; /* Adjust vertical positioning of the paragraph */
+    top: 100px;
     right: 20px;
     max-width: 100%;
 }

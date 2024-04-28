@@ -81,7 +81,7 @@ body{
     background: var(--bg-color);
     color: var(--text-color);
     overflow-x: hidden;
-    padding-top: 150px; /* Adding padding to the top of the body to account for the header height */
+    padding-top: 150px;
     --text-color: black;
 }
 
@@ -224,7 +224,7 @@ section{
 .home{
     position: relative;
     width: 100%;
-    height:80vh; /*prev 100 */
+    height:80vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -260,12 +260,7 @@ section{
     -webkit-text-stroke: 2px #fff;
     color: transparent;
 }
-/*
-.container{
-    max-width: 1170px;
-    margin: auto;
-}
-*/
+
 .container1 {
     display: inline-block
 }
@@ -278,7 +273,7 @@ section{
     color: whitesmoke;
     letter-spacing: 10px;
     font-family: monospace;
-    /* border-right: 3px solid; */
+   
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -292,11 +287,11 @@ section{
     color: whitesmoke;
     letter-spacing: 10px;
     font-family: monospace;
-    /*border-right: 3px solid;*/
+   
     width: 100%;
     white-space: nowrap;
     overflow: hidden;
-    opacity: 0; /* Initially hidden */
+    opacity: 0;
 }
 
 @keyframes cursor {
@@ -317,9 +312,9 @@ section{
     z-index: -1;
 }
 
-/* Style for your new content */
+
 #new-content {
-    /* Your styles for the new content */
+   
     display: none;
 }
 
@@ -435,12 +430,7 @@ font-size: 12px;
     overflow: hidden;
     font-size: 1.125rem;
 }
-/*
-.row{
-    display: flex;
 
-}
-*/
 
 .list1{
     position: top;
@@ -455,13 +445,13 @@ font-size: 12px;
     margin: 0 25px;
     transition: all ease .50s;
     background-color: rgba(0, 0, 0, 0.566);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for a 3D effect */
-    padding: 15px; /* Adds space inside the box */
-    border: 1px solid #ccc; /* Light grey border */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border: 1px solid #ccc;
 
 }
 
-/* Service Fisheries Monitoring Programs, Scientific Sampling, ProTech Fisheries Domain Column */
+
 .SideOne-column{
     float:left;
     width: 100%;
@@ -481,7 +471,7 @@ font-size: 12px;
     box-sizing: border-box;
 }
 
-/* Service Protected Species Program, Dredge Material Inspection, GSA Services Column */
+
 .SideTwo-Column{
     float:left;
     width: 100%;
